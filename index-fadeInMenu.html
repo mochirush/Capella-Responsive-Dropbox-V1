@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+   <![endif]-->
+   <!--[if IE 7]>         
+   <html class="no-js lt-ie9 lt-ie8">
+      <![endif]-->
+      <!--[if IE 8]>         
+      <html class="no-js lt-ie9">
+         <![endif]-->
+         <!--[if gt IE 8]><!--> 
+         <html class="no-js" lang="en">
+            <!--<![endif]-->
+            <head>
+               <meta charset="utf-8">
+               <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+               <title>Responsive Capella Demo</title>
+               <meta name="description" content="">
+               <meta name="viewport" content="width=device-width, initial-scale=1">
+               <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/8dc97fa0-8de1-400e-8a34-dfa44cd083eb.css"/>
+               <link rel="stylesheet" href="css/bootstrap.min.css"/>
+               <link rel="stylesheet" href="css/bootstrap-responsive.min.css"/>
+               <link rel="stylesheet" href="css/font-awesome.min.css"/>
+               <link rel="stylesheet" href="css/main-fadeInMenu.css"/>
+               <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+            </head>
+            <body>
+
+               <!-- Start of container wrapper -->
+               <div class="container container-wrapper overlay no-padding white-bg">
+               <!-- Modal interrupt -->
+               <div class="modal fade" id="appPrompt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <a href="#" class="close-modal" data-dismiss="modal" aria-hidden="true">
+                        <img src="img/search-close.png" alt="" />
+                        </a>
+                        <div class="clearfix"></div>
+                        <div class="modal-body">
+                           <div class="visible-xs visible-sm">
+                              <a href="javascript:void(0);" class="btn btn-primary btn-lg"><i class="fa fa-mobile fa-2x"></i> View in App</a>
+                              <p class="or-divider">or</p>
+                              <a href="fullsite.html" class="btn btn-primary btn-lg">View in Full Site</a>
+                              <div class="clearfix"></div>
+                              <div class="remember-choice">
+                                 <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1" />
+                                 <label for="radio-choice-1">Remember this choice</label>
+                              </div>
+                           </div>
+                           <div class="visible-md visible-lg">
+                              <p>Testing note TBD</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Primary header for desktop/tablet-->
+               <div class="header-primary">
+                  <div class="container">
+                     <!-- Desktop - iPad Landscape -->
+                     <div class="hidden-xs hidden-sm primary-header col-sm-12 col-md-5 col-lg-5">
+                        <a class="navbar-brand capella-logo pull-left" href="index.asp">
+                        <img class="pull-left" src="img/header-capella-logo.png" alt="" />
+                        <img class="pull-left" src="img/header-iguide-logo.png" alt=""/></a>
+                     </div>
+                     <!-- end of Desktop - iPad Landscape -->
+                     <div class="hidden-md hidden-lg primary-header col-sm-3">
+                        <a class="" href="index.asp"><img src="img/header-capella-logo.png" alt="" /></a>
+                     </div>
+                     <!-- Hamburger Button for Portrait -->
+                     <div class="navbar-header mobilenavbar visible-xs hidden-desk col-xs-1 col-sm-1">
+                        <button type="button" class="pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                           <span class="sr-only">Toggle navigation</span>
+                           <span class="mobileNav"></span>
+                        </button>
+                        <div class="clearfix"></div>
+                     </div>
+
+                     <!-- end of left hand header -->
+                     <!-- Start of right hand header -->
+                     <!-- Start of Learner Profile --> 
+                     <div class="learner-profile-top col-xs-8 col-sm-6 col-md-5 col-lg-5">
+                        <img src="img/learner-portrait-with-notification-ipad-portrait.jpg" alt="" class="learner-portrait hidden-md hidden-lg"/>
+                        <img src="img/learner-portrait-with-notification.jpg" alt="" class="learner-portrait hidden-xs hidden-sm"/>
+                        <span class="salutation"><span class="name">Hi Beverly</span> <span class="user-profile-arrow"></span></span>
+                        <img src="img/email-with-notification.png" alt="" class="email-icon hidden-xs hidden-sm"/>
+                        <img src="img/email-with-notification-ipad-portrait.png" alt="" class="email-icon hidden-md hidden-lg"/>
+                        <span class="search-this closex"></span>
+                     </div>
+                     <div class="learner-profile-dropdown col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <img src="img/learner-profile-top-arrow.png" alt="" class="learner-top-arrow hidden-xs hidden-sm"/>
+                        <div class="learner-profile user-details col-md-12 col-lg-12">
+                           <div class="light-grey col-xs-12 col-sm-6">
+                              Hi, Beverly Doe<br/>
+                              Learner ID: 5555555
+                           </div>
+                           <div class="learner-profile social-profile col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <ul>
+                                 <li class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-padding"><a href="#" class="wall">Wall</a></li>
+                                 <li class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-padding"><a href="#" class="friends">Friends</a></li>
+                                 <li class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-padding"><a href="#" class="friends-requests">Friend Requests</a></li>
+                                 <li class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-padding"><a href="#" class="classmates">Classmates</a></li>
+                                 <li class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-padding"><a href="#" class="edit-profile">Edit Profile</a></li>
+                                 <li class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-padding"><a href="#" class="logout">Log Out</a></li>
+                              </ul>
+                           </div>
+                           <div class="learner-profile user-details hidden-xs hidden-sm col-md-12 col-lg-12">
+                              <div class="light-grey">
+                                 <strong>Purpose Title</strong>
+                                 <p>I want to advance the nursing profession by fostering high standards of nursing practice.</p>
+                                 <a href="#">View extended purpose</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div><!-- end of learner profile dropdown -->
+                     <!-- end of learner-profile -->
+                  </div>
+               </div>
+
+               <div class="mobile-navigation collapse">
+                  <ul>
+                     <li class="col-xs-6"><a href="#"><img src="img/home-icon-new.png" alt="" class="home-icon"/><span class="mobileHome">Home</span></a></li>
+                     <li class="col-xs-12"><a href="#">My Capella</a></li>
+                     <li class="col-xs-12"><a href="#">The University</a></li>
+                     <li class="col-xs-12"><a href="#">Library</a></li>
+                     <li class="col-xs-12"><a href="#">Academic Skills</a></li>
+                     <li class="col-xs-12"><a href="#">Support Teams</a></li>
+                     <li class="col-xs-12"><a href="#">Community</a></li>
+                  </ul>
+               </div><!-- end of mobile-navigation-->
+
+               <div class="search dark-grey">
+                  <div class="container">
+                     <!-- Desktop search panel -->
+                     <div class="row">
+                        <div id="search-panel" class="search-panel collapse">
+                           <form class="" role="search">
+                              <div class="search-glass-icon">
+                                 <img src="img/search-icon-new.png" alt=""/>
+                              </div>
+                              <input type="text" class="form-control" placeholder="Search">
+                              <button type="submit" class="btn btn-default" data-toggle="collapse" data-target="#search-panel">Search</button>
+                           </form>
+                           <div class="clearfix"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="navigation">
+                  <div class="">
+                     <div class="">
+                        <nav class="navbar yamm navbar-inverse" role="navigation">
+                           <!-- Mobile Header -->
+                           
+                           <!-- Primary Navigation -->
+                           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                              <!-- Mega menu -->
+                              <ul class="nav navbar-nav">
+                                 <li><a href="#" class="preventTouchClick"><img src="img/home-icon-new.png" alt=""  class="home-icon"/>HOME</a></li>
+                                 <li class="dropdown yamm-fw">
+                                    <a href="#" class="preventTouchClick">My Capella <i class="fa fa-caret-down hidden-sm hidden-xs"></i></a>
+                                    <ul class="dropdown-menu hidden-xs">
+                                       <li>
+                                          <!-- Content container to add padding -->
+                                          <div class="yamm-content">
+                                             <div class="row">
+                                                <a class="navhome" href="#">My Capella Home <i class="fa fa-angle-right"></i></a>
+                                                <ul class="col-sm-4  list-unstyled">
+                                                   <li class="subnavtitle">Finances</li>
+                                                   <li><a href="#">My financial aid</a></li>
+                                                   <li><a href="#">Financial aid resources</a></li>
+                                                   <li><a href="#">Account summary</a></li>
+                                                   <li><a href="#">Make a payment</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Academic Plan &amp; Course Registration</li>
+                                                   <li><a href="#">Academic plan &amp; register for courses</a></li>
+                                                   <li><a href="#">Register for courses</a></li>
+                                                   <li><a href="#">Drop a course</a></li>
+                                                   <li><a href="#">Change enrollment status</a></li>
+                                                   <li><a href="#">Calendars</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Grades &amp; Transcripts</li>
+                                                   <li><a href="#">View grades</a></li>
+                                                   <li><a href="#">Request official transcript</a></li>
+                                                   <li><a href="#">View unofficial transcript</a></li>
+                                                   <li><a href="#">Miliary transcripts</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled profiledrop">
+                                                   <li class="subnavtitle">My Profile</li>
+                                                   <li><a href="#">Wall</a></li>
+                                                   <li><a href="#">Friends</a></li>
+                                                   <li><a href="#">Classmates</a></li>
+                                                   <li><a href="#">Edit profile</a></li>
+                                                   <li><a href="#">My Groups</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Personal and Account Information</li>
+                                                   <li><a href="#">Addresses</a></li>
+                                                   <li><a href="#">Email addresses</a></li>
+                                                   <li><a href="#">Phone numbers</a></li>
+                                                   <li><a href="#">FERPA privacy settings</a></li>
+                                                   <li><a href="#">Change password</a></li>
+                                                   <li><a href="#">Student center</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Starting at Capella</li>
+                                                   <li><a href="#">Admission center</a></li>
+                                                   <li><a href="#">Readiness at Capella</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Graduating</li>
+                                                   <li><a href="#">Apply for graduation</a></li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class="dropdown yamm-fw">
+                                     <a href="#" class="preventTouchClick">The University <i class="fa fa-caret-down hidden-sm hidden-xs"></i></a>
+                                    <ul class="dropdown-menu hidden-xs">
+                                       <li>
+                                          <!-- Content container to add padding -->
+                                          <div class="yamm-content">
+                                             <div class="row">
+                                                <a class="navhome" href="#">The University Home <i class="fa fa-angle-right"></i></a>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Schools and Departments</li>
+                                                   <li>
+                                                      <a href="#">Harold Abel School of Social and Behavioral Sciences</a>
+                                                      <ul>
+                                                         <li><a href="#">Department of Counseling</a></li>
+                                                         <li><a href="#">Department of Psychology</a></li>
+                                                         <li><a href="#">Department of Social Work</a></li>
+                                                      </ul>
+                                                   </li>
+                                                   <li><a href="#">School of Business and Technology</a></li>
+                                                   <li><a href="#">School of Education</a></li>
+                                                   <li>
+                                                      <a href="#">School of Public Service Leadership</a>
+                                                      <ul>
+                                                         <li><a href="#">Department of Nursing</a></li>
+                                                      </ul>
+                                                   </li>
+                                                   <li><a href="#">School of Undergraduate Studies</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Programs and Licensing</li>
+                                                   <li><a href="#">The University home</a></li>
+                                                   <li><a href="#">FlexPath</a></li>
+                                                   <li><a href="#">Licensure resources</a></li>
+                                                   <li><a href="#">Practicum and internship</a></li>
+                                                   <li><a href="#">Residencies and colloquia</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Administrative Information</li>
+                                                   <li><a href="#">Academic calendars</a></li>
+                                                   <li><a href="#">Academic honesty and APA</a></li>
+                                                   <li><a href="#">Admission center</a></li>
+                                                   <li><a href="#">Diversity mission statement</a></li>
+                                                   <li><a href="#">Frequently asked questions</a></li>
+                                                   <li><a href="#">Graduation and commencement information</a></li>
+                                                   <li><a href="#">Catalogs, Policies and handbooks</a></li>
+                                                   <li><a href="#">University forms</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Awards</li>
+                                                   <li><a href="#">Distinguished and award-winning faculty</a></li>
+                                                   <li><a href="#">Student award opportunities [proposed]</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Stores</li>
+                                                   <li><a href="#">Bookstore</a></li>
+                                                   <li><a href="#">Capella gear</a></li>
+                                                   <li><a href="#">Software discounts, course materials, ebooks</a></li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class="dropdown yamm-fw">
+                                     <a href="#" class="preventTouchClick">Library <i class="fa fa-caret-down hidden-sm hidden-xs"></i></a>
+                                    <ul class="dropdown-menu hidden-xs">
+                                       <li>
+                                          <!-- Content container to add padding -->
+                                          <div class="yamm-content">
+                                             <div class="row">
+                                                <a class="navhome" href="#">Library Home <i class="fa fa-angle-right"></i></a>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li><a href="#">Ask a Librarian</a></li>
+                                                   <li class="subnavtitle">Finding Articles and Books</li>
+                                                   <li><a href="#">Summon</a></li>
+                                                   <li><a href="#">Databases A-Z</a></li>
+                                                   <li><a href="#">Databases by school</a></li>
+                                                   <li><a href="#">Journal and book locator</a></li>
+                                                   <li><a href="#">Online reference materials</a></li>
+                                                   <li><a href="#">Find a local Library</a></li>
+                                                   <li><a href="#">Interlibrary Loan</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Library Skills</li>
+                                                   <li><a href="#">Searching effectively</a></li>
+                                                   <li><a href="#">Identifying scholarly resources</a></li>
+                                                   <li><a href="#">Evaluating your sources</a></li>
+                                                   <li><a href="#">Reviewing the Literature</a></li>
+                                                   <li><a href="#">Defining your topic</a></li>
+                                                   <li><a href="#">Dissertation research</a></li>
+                                                   <li><a href="#">Introduction to online libraries</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Research Management Tools</li>
+                                                   <li><a href="#">RefWorks research management tool</a></li>
+                                                   <li><a href="#">Assignment calculator</a></li>
+                                                   <li><a href="#">Database log</a></li>
+                                                   <li><a href="#">Scholarly research log</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">About the Library</li>
+                                                   <li><a href="#">Library FAQs and guides</a></li>
+                                                   <li><a href="#">Hours and holiday schedule</a></li>
+                                                   <li><a href="#">Library Staff</a></li>
+                                                   <li><a href="#">Library policies</a></li>
+                                                   <li><a href="#">Mission and services</a></li>
+                                                   <li><a href="#">Alumni library</a></li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class="dropdown yamm-fw">
+                                    <a href="#" class="preventTouchClick">Academic Skills <i class="fa fa-caret-down hidden-sm hidden-xs"></i></a>
+                                    <ul class="dropdown-menu hidden-xs">
+                                       <li>
+                                          <!-- Content container to add padding -->
+                                          <div class="yamm-content">
+                                             <div class="row">
+                                                <a class="navhome" href="#">Academic Skills home <i class="fa fa-angle-right"></i></a>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Skills</li>
+                                                   <li><a href="#">Effective learning strategies</a></li>
+                                                   <li><a href="#">Time management</a></li>
+                                                   <li><a href="#">Working effectively in teams</a></li>
+                                                   <li><a href="#">Critical thinking</a></li>
+                                                   <li><a href="#">Reading strategies</a></li>
+                                                   <li><a href="#">Math skills</a></li>
+                                                   <li><a href="#">Understanding statistics</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Writing Assistance</li>
+                                                   <li><a href="#">Writing center</a></li>
+                                                   <li><a href="#">Academic honesty and APA</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Dissertation and Comps Preparation</li>
+                                                   <li><a href="#">Managing your PhD journey</a></li>
+                                                   <li><a href="#">Dissertation research</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Study Groups and Tutoring</li>
+                                                   <li><a href="#">Academic tutoring</a></li>
+                                                   <li><a href="#">Supplemental instruction</a></li>
+                                                   <li><a href="#">Online study groups</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Technical Skills</li>
+                                                   <li><a href="#">Turnitin tutorial</a></li>
+                                                   <li><a href="#">ePortfolio tutorial</a></li>
+                                                   <li><a href="#">Using Adobe Connect</a></li>
+                                                   <li><a href="#">iGuide tutorials</a></li>
+                                                   <li><a href="#">Courseroom 3 help</a></li>
+                                                   <li><a href="#">Computer skills</a></li>
+                                                   <li><a href="#">Software instruction - self-paced learning</a></li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class="dropdown yamm-fw">
+                                    <a href="#" class="preventTouchClick">Support Teams <i class="fa fa-caret-down hidden-sm hidden-xs"></i></a>
+                                    <ul class="dropdown-menu hidden-xs">
+                                       <li>
+                                          <!-- Content container to add padding -->
+                                          <div class="yamm-content">
+                                             <div class="row">
+                                                <a class="navhome" href="#">Support teams home <i class="fa fa-angle-right"></i></a>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Financial Aid</li>
+                                                   <li><a href="#">Financial aid process </a></li>
+                                                   <li><a href="#">My Financial Aid</a></li>
+                                                   <li><a href="#">How to apply for aid</a></li>
+                                                   <li><a href="#">Financing your education</a></li>
+                                                   <li><a href="#">Loan management</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Advising</li>
+                                                   <li><a href="#">Advising &amp; program planning</a></li>
+                                                   <li><a href="#">Free non-graded seminars</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Career Center</li>
+                                                   <li><a href="#">Career center homepage</a></li>
+                                                   <li><a href="#">Job search tools</a></li>
+                                                   <li><a href="#">Changing specializations</a></li>
+                                                   <li><a href="#">Online career seminars</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Disability Services</li>
+                                                   <li><a href="#">Disability services homepage</a></li>
+                                                   <li><a href="#">What’s a disability?</a></li>
+                                                   <li><a href="#">Available accommodations</a></li>
+                                                   <li><a href="#">Alternative textbook process</a></li>
+                                                   <li><a href="#">Requesting accommodations</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Military Support</li>
+                                                   <li><a href="#">Military support homepage</a></li>
+                                                   <li><a href="#">Military leave of absence</a></li>
+                                                   <li><a href="#">Funding your education</a></li>
+                                                   <li><a href="#">Get credit for your training</a></li>
+                                                   <li><a href="#">Info for military spouses</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Technical</li>
+                                                   <li><a href="#">24/7 learner technical support</a></li>
+                                                   <li><a href="#">Courseroom help</a></li>
+                                                   <li><a href="#">Capella systems tutorials</a></li>
+                                                   <li><a href="#">Capella mobile</a></li>
+                                                   <li><a href="#">About iGuide</a></li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class="dropdown yamm-fw">
+                                    <a href="#" class="preventTouchClick">Community <i class="fa fa-caret-down hidden-sm hidden-xs"></i></a>
+                                    <ul class="dropdown-menu hidden-xs">
+                                       <li>
+                                          <!-- Content container to add padding -->
+                                          <div class="yamm-content">
+                                             <div class="row">
+                                                <a class="navhome" href="#">Community Home <i class="fa fa-angle-right"></i></a>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Alumni Association</li>
+                                                   <li><a href="#">Alumni Association homepage</a></li>
+                                                   <li><a href="#">Alumni library</a></li>
+                                                   <li><a href="#">Events and opportunities</a></li>
+                                                   <li><a href="#">Alumni accomplishments</a></li>
+                                                   <li><a href="#">Director’s corner</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">News</li>
+                                                   <li><a href="#">Capella news</a></li>
+                                                   <li><a href="#">Finances news</a></li>
+                                                </ul>
+                                                <ul class="col-sm-4 list-unstyled">
+                                                   <li class="subnavtitle">Networking</li>
+                                                   <li><a href="#">Connect and network</a></li>
+                                                   <li><a href="#">Capella Ambassadors</a></li>
+                                                   <li><a href="#">Share your accomplishments</a></li>
+                                                   <li><a href="#">Refer a friend</a></li>
+                                                   <li><a href="#">Capella blogs and podcasts</a></li>
+                                                   <li><a href="#">Groups</a></li>
+                                                   <li><a href="#">Campus discussions</a></li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li><a href="#" class="visible-xs">Logout</a></li>
+                              </ul>
+                           </div>
+                        </nav>
+                        <!-- /.navbar-collapse -->
+                     </div>
+                  </div>
+               </div>
+
+               <div class="white-bg overflow">
+               <!-- Carousel -->
+                  <div id="carousel-example-generic-desktop" class="carousel slide" data-ride="carousel">
+                     <div class="carousel-inner">
+                        <div class="item active">
+                           <img src="img/newspic_1_lg.jpg" alt="..." />
+                        </div>
+                        <div class="item ">
+                           <img src="img/newspic_2_lg.jpg" alt="..." />
+                        </div>
+                     </div>
+                     <a class="left carousel-control" href="#carousel-example-generic-desktop" data-slide="prev">
+                     <i class="fa fa-chevron-left fa-lg"></i>
+                     </a>
+                     <a class="right carousel-control" href="#carousel-example-generic-desktop" data-slide="next">
+                     <i class="fa fa-chevron-right fa-lg"></i>
+                     </a>
+                  </div>
+                  <div class="see-all-news col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+                     <a href="#">See all news</a>
+                  </div><!-- end of see-all-news -->
+                  <div class="news-announcements col-xs-12 col-md-9 col-lg-9">
+                     <img src="img/hazard-icon.png" alt="" class="hazard-icon left"/>
+                     <p class="news-alert-new">Courseroom for learners enrolled may be unavailable for a portion of the day beginning 12a.m. Central Time on Tuesday, November 25 during a Courseroom upgrade.</p>
+                  </div><!-- end of news-annoucements -->                 
+               </div>
+               <!-- Primary Content - Course info-->  
+               <div class="course-info white-bg col-md-12 col-lg-12">
+                  <div class="entire-panel-wrapper">
+                     <div class="first-panel col-md-5 col-lg-5">
+                        <div class="course-info light-gray-bg">
+                           <!-- Course 1-->
+                           <div class="course-panel">
+                              <div class="header">
+                                 <div class="">
+                                    <div class="course-info details">
+                                       <a class="visible-lg visible-md visible-sm visible-xs" href="http://media.capella.edu/NonCourseMedia/iGuide-responsive/_devCA/fullsite.html">
+                                          <div class="">
+                                             <div class="course-id col-md-4 col-lg-4 no-padding"> bio1000</div>
+                                             <div class="courseroomicon pull-right"></div>
+                                             <h2 class="course-title col-md-12 col-lg-12 no-padding">Human Biology</h2>
+                                             <span class="course-dates col-md-12 col-lg-12 no-padding">Section 4 | Jan 6 2014 - Mar 14 2014</span>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="course-detail first-box one-line">
+                                 <div class="course-notifications clearfix">
+                                    <div class="faculty-info pull-left col-sm-9 col-md-9 col-lg-9">
+                                       <img src="img/course-faculty-1.jpg" alt="" class="pull-left"/>
+                                       <ul class="faculty-details">
+                                          <li><a href="#" class="faculty-name">Jennifer Hurley O'Hara</a></li>
+                                          <li class="visible-xs visible-sm visible-md visible-lg"><img src="img/map-icon-new.png" alt=""/>
+                                             <span class="faculty-location">St. Paul, MN</span></li>
+                                       </ul>
+                                    </div>
+                                    <div class="contact-icons pull-left">
+                                       <a href="email.html"><img src="img/contact-new.png" alt="" /></a>
+                                       <!-- <a href="#"><img src="img/course-add.jpg" alt="" /></a> -->
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="clearfix"></div>
+                           </div>
+                        </div>
+                     </div>
+                  <!-- end of first panel -->
+                  <!-- Start of 2nd and 3rd Boxes -->
+                  <div class="last-panels col-md-7 col-lg-7 hidden-xs">
+                     <!-- Start of Announcements -->
+                     <div class="panel panel-default col-sm-6 col-md-6 col-md-6">
+                        <div class="panel-inner-box">
+                           <ul>
+                              <li>Announcements <span class="pull-right strong">2 recent</span></li>
+                              <li>Discussions Replies To Me <span class="pull-right strong">7 unread</span></li>
+                              <li>Messages <span class="pull-right strong">4 unread</span></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <!-- end of annoucements -->
+                     <!-- Start of Assignment Status -->
+                     <div class="panel-group">
+                        <div class="panel panel-default col-sm-6 col-md-6 col-lg-6">
+                           <div class="panel-inner-box">
+                              <ul class="assignments">
+                                 <li>Assignment Status<br/>2/12/2015<br/><span class="no-transform">[u10a1] Unit 10 Assignment 1 is due this week.</span></li>
+                                 <li>2/12/2015<br/><span class="no-transform">[u10a1] Unit 10 Assignment 1 is due this week.</span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div><!-- end of last panels -->
+                  <!-- Mobile Version -->
+                  <div class="last-panels visible-xs hidden-sm hidden-md hidden-lg">
+                     <!-- Start of Announcements -->
+                     <div class="panel panel-default">
+                        <div class="panel-inner-box">
+                              <ul class="assignments">
+                                 <li>Assignment Status<br/>2/12/2015<br/><span class="no-transform">[u10a1] Unit 10 Assignment 1 is due this week.</span></li>
+                                 <li>2/12/2015<br/><span class="no-transform">[u10a1] Unit 10 Assignment 1 is due this week.</span></li>
+                              </ul>
+                           </div>
+                     </div>
+                     <!-- end of annoucements -->
+                     <!-- Start of Assignment Status -->
+                     <div class="panel-group">
+                        <div class="panel panel-default col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                           <div class="panel-inner-box last">
+                              <ul>
+                                 <li>Announcements <span class="pull-right strong">2 recent</span></li>
+                                 <li>Discussions Replies To Me <span class="pull-right strong">7 unread</span></li>
+                                 <li>Messages <span class="pull-right strong">4 unread</span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div><!-- end of last panels -->
+               </div><!-- end of first row -->
+            </div><!-- end of entire panel -->
+            <!-- Primary Content - Course info-->  
+            <div class="course-info white-bg col-xs-12 col-md-12 col-lg-12">
+               <div class="entire-panel-wrapper">
+                  <div class="first-panel col-md-5 col-lg-5">
+                     <div class="course-info light-gray-bg">
+                        <!-- Course 1-->
+                        <div class="course-panel">
+                           <div class="header">
+                              <div class="">
+                                 <div class="course-info details">
+                                    <a class="visible-lg visible-md visible-sm visible-xs" href="http://media.capella.edu/NonCourseMedia/iGuide-responsive/_devCA/fullsite.html">
+                                       <div class="">
+                                          <div class="course-id col-md-4 col-lg-4 no-padding"> BUS3007</div>
+                                          <div class="courseroomicon pull-right"></div>
+                                          <h2 class="course-title col-md-12 col-lg-12 no-padding">Developing a Health Care Management Perspective</h2>
+                                          <span class="course-dates col-md-12 col-lg-12 no-padding">Section 4 | Dec 6 2014 - Mar 14 2014</span>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="course-detail first-box two-line">
+                              <div class="course-notifications clearfix">
+                                 <div class="faculty-info pull-left col-sm-9 col-md-9 col-lg-9">
+                                    <img src="img/course-faculty-2.jpg" alt="" class="pull-left"/>
+                                    <ul class="faculty-details">
+                                       <li><a href="#" class="faculty-name">Bryan Udall</a></li>
+                                       <li class="visible-xs visible-sm visible-md visible-lg"><img src="img/map-icon-new.png" alt=""/>
+                                          <span class="faculty-location">Seattle, WA</span></li>
+                                    </ul>
+                                 </div>
+                                 <div class="contact-icons pull-left">
+                                    <a href="email.html"><img src="img/contact-new.png" alt="" /></a>
+                                    <!-- <a href="#"><img src="img/course-add.jpg" alt="" /></a> -->
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                     </div>
+                  </div>
+               <!-- end of first panel -->
+               <!-- Start of 2nd and 3rd Boxes -->
+               <div class="last-panels col-md-7 col-lg-7 hidden-xs">
+                  <!-- Start of Announcements -->
+                  <div class="panel panel-default col-sm-6 col-md-6 col-md-6">
+                     <div class="panel-inner-box">
+                        <ul>
+                           <li>Announcements <span class="pull-right strong">2 recent</span></li>
+                           <li>Discussions Replies To Me <span class="pull-right strong">7 unread</span></li>
+                           <li>Messages <span class="pull-right strong">4 unread</span></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- end of annoucements -->
+                  <!-- Start of Assignment Status -->
+                  <div class="panel-group">
+                     <div class="panel panel-default col-sm-6 col-md-6 col-lg-6">
+                        <div class="panel-inner-box">
+                           <ul class="assignments">
+                              <li>Assignment Status<br/>2/12/2015<br/><span class="no-transform">[u10a1] Unit 10 Assignment 1 is due this week.</span></li>
+                              <li>2/12/2015<br/><span class="no-transform">[u10a1] Unit 10 Assignment 1 is due this week.</span></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div><!-- end of last panels -->
+               <div class="last-panels visible-xs hidden-sm hidden-md hidden-lg">
+                  <!-- Start of Announcements -->
+                  <div class="panel panel-default">
+                     <div class="panel-inner-box">
+                        <ul class="assignments">
+                           <li>Assignment Status<br/>2/12/2015<br/><span class="no-transform">[u10a1] Unit 10 Assignment 1 is due this week.</span></li>
+                           <li>2/12/2015<br/><span class="no-transform">[u10a1] Unit 10 Assignment 1 is due this week.</span></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- end of annoucements -->
+                  <!-- Start of Assignment Status -->
+                  <div class="panel-group">
+                     <div class="panel panel-default">
+                        <div class="panel-inner-box last">
+                           <ul>
+                              <li>Announcements <span class="pull-right strong">2 recent</span></li>
+                              <li>Discussions Replies To Me <span class="pull-right strong">7 unread</span></li>
+                              <li>Messages <span class="pull-right strong">4 unread</span></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div><!-- end of last panels -->
+            </div><!-- end of first row -->
+         </div><!-- end of entire panel -->
+         <div class="clearfix"></div>
+                  <!-- Start of Assignment Status -->
+                  <!-- Start of Upcoming Courses -->
+                  <!-- Desktop upcoming courses -->
+                  <div class="upcoming-courses white-bg col-sm-10 col-md-6 col-lg-6">
+                     <h1>Upcoming Courses</h1>
+                     <div class="course-panel">
+                        <div class="course-section">
+                           <ul>
+                              <li class="col-md-12 col-lg-12">
+                                 <a href="#" class="clear">BUS3012</a>
+                                 <a href="#" class="left course-dropdown1">Fundamentals of Leadership</a><span class="courses-arrow left 1"></span>
+                                 <div class="course-description">
+                                    <p class="upcomingcourse 1">3 credits. This course is an introduction to principles and theories of leadership behavior and their application in business and community settings. Learners develop and demonstrate awareness of the characteristics, styles, and practices necessary for effective leadership. </p>
+                                 </div>
+                                 <span class="clear left">January 7 2015 - March 15 2014</span>
+                                 <span class="clear left"><a href="javascript:void(0)"><i class="fa fa-tags"></i> Buy books and course materials</a></span>
+                              </li>
+                              <li class="col-md-12 col-lg-12">
+                                 <a href="#" class="clear">ENG3012</a>
+                                 <a href="#" class="left course-dropdown2">English Composition</a><span class="courses-arrow left 2"></span>
+                                 <div class="course-description">
+                                    <p class="upcomingcourse 2">3 credits. This course is an introduction to writing research techniques and various forms of writing, including expository writing. Learners focus on strengthening their ability to think critically; develop and organize writing topics; and revise their writing for clarity of purpose, readability, and style.  </p>
+                                 </div>
+                                 <span class="clear left">January 7 2015 - March 15 2014</span>
+                                 <span class="clear left"><a href="javascript:void(0)"><i class="fa fa-tags"></i> Buy books and course materials</a></span>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end of upcoming courses -->
+                  <!-- Start of Previous Courses -->
+                  <div class="previous-courses white-bg col-sm-10 col-md-6 col-lg-6">
+                    <h1>Previous Courses</h1> 
+                     <div class="course-panel">
+                        <div class="course-section">
+                           <a href="http://media.capella.edu/NonCourseMedia/iGuide-responsive/_devCA/fullsite.html">MAT2001 - Statistical Reasoning</a>
+                           <ul>
+                              <li>MAT2001</li>
+                              <li class="small">Jan 3 2014 - Mar 21 2014</li>
+                              <li class="small">Section 03</li>
+                           </ul>
+                           <div class="spacer"></div><!-- yup we are really doing this -->
+                           <a href="http://media.capella.edu/NonCourseMedia/iGuide-responsive/_devCA/fullsite.html">BIO1050 - Biology and Society</a>
+                           <ul>
+                              <li>BIO1050</li>
+                              <li class="small">Oct 15 2013 - Dec 22 2013</li>
+                              <li class="small">Section 02</li>
+                           </ul>
+                           <div class="spacer"></div><!-- yup we are really doing this -->
+                           <a href="http://media.capella.edu/NonCourseMedia/iGuide-responsive/_devCA/fullsite.html">CHM1000 - Chemistry for Changing Times</a>
+                           <ul>
+                              <li>CHM1000</li>
+                              <li class="small">Oct 15 2013 - Dec 22 2013</li>
+                              <li class="small">Section 01</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                     <!-- end of previous courses -->
+                  <!-- end of row -->
+               <!-- end of container -->
+               <div class="tasks-giving-wrapper col-sm-12 clear">
+                  <div class="tasks col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1">
+                     <h3>Tasks <span class="exclaimation-mark">!</span></h3>
+                     <a href="#">Go to Tasks</a>
+                  </div>
+                  <div class="inspire-giving col-xs-12 col-sm-5 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2">
+                     <h3>Inspire Giving</h3>
+                     <span class="inspire-points">8 Points</span>
+                     <a href="#" class="capella-donation-go">You decide where Capella's donation dollars go.</a>
+                  </div>
+               </div><!-- end of clear container -->
+
+               <!-- Gold Resource Icons -->
+               <div class="main-content white-bg">
+                  <div class="">
+                     <div class="resource-blocks col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="col-xs-6 col-sm-4 col-md-2 first">
+                           <a class="resource-block-content" href="javascript:void(0);">
+                              <img src="img/quicklink-academic.png" alt=""/>
+                              <p>Academic Plan</p>
+                           </a>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2">
+                           <a class="resource-block-content" href="javascript:void(0);">
+                              <img src="img/quicklink-finance.png" alt=""/>
+                              <p>Finances</p>
+                           </a>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 last">
+                           <a class="resource-block-content" href="javascript:void(0);">
+                              <img src="img/quicklink-bookstore.png" alt="" />
+                              <p>Bookstore</p>
+                           </a>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 first">
+                           <a class="resource-block-content" href="javascript:void(0);">
+                              <img src="img/quicklink-library.png" alt="" />
+                              <p>Search Library</p>
+                           </a>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2">
+                           <a class="resource-block-content" href="javascript:void(0);">
+                              <img src="img/quicklink-community.png" alt="" />
+                              <p>Community </p>
+                           </a>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 last">
+                           <a class="resource-block-content" href="javascript:void(0);">
+                              <img src="img/quicklink-support-new.png" alt="" class="support"/>
+                              <p>Support Teams</p>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="additional-resources">
+                           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                              <h4>MBA Resources</h4>
+                              <ul class="list-unstyled">
+                                 <li><a href="javascript:void(0)">MBA Central</a></li>
+                                 <li><a href="javascript:void(0)">Business and Technical Database</a></li>
+                                 <li><a href="javascript:void(0)">Business and Technical Writing</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6">
+                              <h4>Helpful Resources</h4>
+                              <ul class="list-unstyled">
+                                 <li><a href="javascript:void(0)">APA Formatting Help</a></li>
+                                 <li><a href="javascript:void(0)">Academic Tutoring</a></li>
+                                 <li><a href="javascript:void(0)">Using Turnitin</a></li>
+                                 <li><a href="javascript:void(0)">Academic Calendar</a></li>
+                                 <li><a href="javascript:void(0)">Writing Help</a></li>
+                              </ul>
+                              <div class="col-sm-1 col-md-1 hidden-xs"></div>
+                              <ul class="list-unstyled">
+                                 <li><a href="javascript:void(0)">Library Research Tips</a></li>
+                                 <li><a href="javascript:void(0)">Career Planning Links</a></li>
+                                 <li><a href="javascript:void(0)">Avoiding Procrastination</a></li>
+                                 <li><a href="javascript:void(0)">Reading Comprehension</a></li>
+                                 <li><a href="javascript:void(0)">Referral Form</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- end of row -->
+                     <div class="back-to-top col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                        <a href="#top"><i class="fa fa-caret-up"></i> top</a>
+                     </div><!-- end of back to top -->
+                  </div>
+               </div>
+                  <div class="footer">
+                     <div class="">
+                        <div class="dark-gray-bg">
+                           <div class="tech-support text-center">
+                              <p>TECHNICAL SUPPORT IS AVAILABLE BY PHONE 24/7.</p>
+                              <p class="hidden-xs phones">1-888-CAPELLA (1-888-227-3552) <span class="phone-gap"> .</span> International: 1-612-977-5000</p>
+                              <p class="visible-xs">1-888-CAPELLA (1-888-227-3552)</p>
+                              <p class="visible-xs">International: 1-612-977-5000</p>
+                              <br />
+                              <a class="contact-support" href="javascript:void(0)">Learner Technical Support</a>
+                           </div>
+                           <div class="app-links text-center">
+                              <p>Download the Capella app</p>
+                              <a href="#"><img src="img/app-ios.png" alt="" /></a>
+                              <a href="#"><img src="img/app-android.png" alt="" /></a>
+                           </div>
+                        </div>
+                        <div class="footer dark-gray-bg">
+                           <ul class="about-links small">
+                              <li><a href="#">Faculty Site</a></li>
+                              <li><a href="#">About Capella</a></li>
+                              <li><a href="#">Legal</a></li>
+                              <li><a href="#">Privacy</a></li>
+                              <li><a href="#">Learner Support</a></li>
+                              <li><a href="#">Feedback </a></li>
+                           </ul>
+                           <p class="small copyright">&copy; 2014 <a href="javascript:void(0)">Capella University</a>. All Rights Reserved.</p>
+                        </div>
+
+                     </div><!-- end of container -->
+                     <div class="container settings hidden-sm">
+                        <div class="col-md-12 col-lg-12">
+                           <ul>
+                              <li><a href="#">Settings</a></li>
+                              <li><a href="#">Online Friends (0)</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+            </div><!-- end of page container-wrapper -->
+               <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+               <script src="js/vendor/bootstrap.min.js"></script>
+               <script src="js/plugins/jquery.clickout.js"></script>
+               <script src="js/main-fadeInMenu.js"></script>
+            </body>
+         </html>

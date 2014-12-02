@@ -1,0 +1,1740 @@
+/*
+font-family:'Avenir LT W01 35 Light';
+font-family:'AvenirLTW01-35LightObli';
+font-family:'Avenir LT W01 45 Book';
+font-family:'AvenirLTW01-45BookObliq';
+font-family:'Avenir LT W01 55 Roman';
+font-family:'AvenirLTW01-55Oblique';
+font-family:'Avenir LT W01 65 Medium';
+font-family:'AvenirLTW01-65MediumObl';
+font-family:'Avenir LT W01 85 Heavy';
+font-family:'AvenirLTW01-85HeavyObli';
+font-family:'Avenir LT W01 95 Black';
+font-family:'AvenirLTW01-95BlackObli';
+*/
+
+
+/*
+bg - #35302a
+profile #8b8a86
+course bg #f2f2f2
+course head #38a2d4
+header black #1a1712
+caplla red #800d1c
+nav bar bg #2b2a26
+*/
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body,html{
+	height:100%;
+	background:#E6E8EA;
+	font-size:17px;
+	line-height:26px;
+}
+ul.nav, .yamm-content{
+	font-size:17px;
+	line-height:26px;
+}
+h1,h2,h3,h4{
+	font-family:'Avenir LT W01 55 Roman', Verdana, Arial, sans-serif;
+}
+.container {
+	width:992px;
+}
+.container.main-wrapper{
+	min-height:100%;
+	background:#fff;
+}
+.course-panel, .panel-group, .upcoming-courses, .previous-courses {
+	padding:0;
+	min-height:280px;
+}
+
+.cursor {
+	cursor:pointer;
+}
+
+.no-transform {
+	text-transform: none;
+}
+
+.main-content.white-bg {
+	padding-bottom:30px;
+}
+
+/*  Hidden search panel ------------------------------------------- */
+
+
+
+.search-panel{
+	text-align:center;
+	
+}
+
+.search-panel form{
+	width:82%;
+	margin:20px 0 20px 8%;
+	float:left;
+	height:40px;
+}
+
+.search-panel .search-glass-icon{
+	height:40px;
+	width:6%;
+	color:#ccc;
+	float:left;
+	background:#ecebeb;
+	padding-top:8px;
+}
+
+.search-panel input{
+	height:40px;
+	width:77%;
+	float:left;
+	background:#ecebeb;
+	border:none;
+	box-shadow:none;
+}
+
+.search-panel button{
+	height:40px;
+	width:16%;
+	float:left;
+	padding:0 30px;
+	background:#005a8c;
+	color:#fff;
+	text-transform:uppercase;
+	font-weight:200;
+	font-family:'Avenir LT W01 55 Roman', Verdana, Arial, sans-serif;}
+
+.search-panel button:hover{
+	background:#000;
+	color:#fff;
+}
+
+.search-panel .close{
+	float:left;
+	margin:22px 0 0 8px;
+	opacity:.7;
+}
+	
+.search-panel .close:hover{opacity:1}
+
+
+/*  Mobile Search panel */
+.mobile-search .search-panel form{
+	width:94%;
+	margin:20px 3%;
+	height:90px;
+}
+
+.mobile-search{
+	border-bottom:1px solid #444;
+	background:#2b2a26;
+}
+
+.mobile-search .search-panel .search-glass-icon{width:10%}
+.mobile-search .search-panel input{width:90%}
+
+.mobile-search .search-panel button{
+	width:60%;
+	clear:left;
+	display:block;
+	margin:12px 20% 0 20%;
+	border:none;
+}
+
+
+
+/* Primary header ------------------------------------------- */
+
+.header-primary{
+	background:#1a1712;
+	color:#ccc;
+}
+
+.navigation{
+		border-bottom:6px solid #800d1c;
+		background:#2b2a27;
+		
+}
+
+.primary-header{
+
+}
+
+.navbar-inverse{
+	border:none;
+
+	background:#2b2a26;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+/*margin:2px 0px;*/
+padding:14px 10px;
+color: #fff;
+text-transform:uppercase;
+font-size:15px;
+font-family:avenir, arial, sans-serif;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus{background:transparent;}
+
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus{background:transparent;background:#000;color:#fff;}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {background:#000;
+color: #fff;
+}
+
+.navbar{
+	margin-bottom:0;
+	min-height:47px;
+	background-color:#4D4848;	
+}
+
+.navbar .home-icon {
+	float:left;
+	text-align:right;
+	margin:-5px 20px 0px 15px;
+}
+
+.navbar-header{width:100%;background:#1a1712;color:#fff;}
+
+.navbar-brand.capella-logo img{margin-right:10px}
+
+img.phone-sm-logo{
+	display:none;
+}
+
+.navbar-collapse {
+	padding-left:0px;
+}
+	
+.carousel{
+	overflow:hidden;}
+
+.carousel-control.right,
+.carousel-control.left{
+	margin-top:12%;
+}
+
+.carousel-control.left{
+
+}
+.carousel-control.right{
+
+}
+.carousel-control.left i{
+	margin-left:-3px;
+}
+.carousel-control.right i{
+	margin-right:-3px;
+}
+.carousel-control{
+
+	width:50px;
+	height:50px;
+	background:#000;
+	background:rgba(0,0,0,.2);
+	border-radius:25px;
+	padding-top:10px;
+	opacity:1;
+	z-index:9999;
+}
+.carousel-control i{
+	display:block;
+	margin-top:8px;
+	font-size:25px;
+}
+.mobilecarousel .carousel-control{
+	width:45px;
+	height:45px;
+	margin-top:16%;
+}
+.mobilecarousel .carousel-control i{
+	margin-top:5px;
+	display:block;
+}
+
+.news-slider-content{
+	height:70px;
+	padding:12px;
+}
+/*FADING BOOTSTRAP CAROUSEL*/
+.carousel {
+  opacity: 1;
+}
+.carousel .item {
+  -moz-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  left: 0 !important;
+  opacity: 0;
+  top:0;
+  position:absolute;
+  width: 100%;
+  display:block !important;
+  z-index:1;
+}
+.carousel .item:first-child {
+  top:auto;
+  position:relative;
+}
+.carousel .item.active {
+  opacity: 1;
+  -moz-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  z-index:2;
+}
+
+.learner-profile-top {
+	padding-top:10px;
+}
+
+.learner-profile-top .learner-portrait {
+	float:left;
+}
+
+.learner-profile-top .salutation {
+	float:left;
+	font-size:13px;
+	font-family:Arial;
+	letter-spacing:1px;
+	padding:20px 0px 0px 15px;
+	color:#fff;
+}
+
+.learner-profile-top .email-icon {
+	padding:10px 0px 0px 30px;
+}
+
+.learner-profile-top .search-this {
+	padding:5px 0px 0px 30px;
+}
+
+/*END*/
+
+.white-bg{background:#fff;}
+.gray-bg{background:#ccc;}
+.light-gray-bg{background:#f2f2f2;}
+.dark-gray-bg{background:#35302a;color:#ccc;}
+
+
+.primary-header {
+	padding:30px 20px 10px 20px;
+	font-family:'Avenir LT W01 55 Roman', Verdana, Arial, sans-serif;}
+.primary-header .capella-logo{
+	margin:0;
+	padding:0;
+}
+
+.primary-header a{color:#d7d7d7;}
+.primary-header a:hover
+.primary-header a:focus{color:#fff;}
+
+.primary-header .logout{
+	margin:17px 15px 0 0;
+	text-transform:uppercase;
+	font-size:12px;
+}
+
+	
+.primary-header .mail-icon{margin-right:20px;}
+.primary-header .learner-info{
+	margin-right:12px;
+	color:#d7d7d7;
+	text-align:right;
+	font-size:12px;
+	line-height:20px;
+	}	
+
+.primary-header .learner-info p{margin:0;}
+
+.primary-header .learner-info .learner-id,.mobile-learner-info .learner-id{color:#a6a5a5;}
+/*CHANGED BY CA*/
+.primary-header a.search-icon, .search-icon.mobile-search{
+	height:45px;
+	width:42px;
+	background:#292924;
+	border:1px solid #444;
+	border-radius:5px;
+}
+.primary-header a.search-icon img, .search-icon.mobile-search img{
+	margin:12px 10px;
+}
+.search-icon.mobile-search{
+	margin:8px;
+}
+.primary-header a.search-icon:hover, .search-icon.mobile-search:hover{
+	background:#353535;
+}
+.navbar-inverse .navbar-toggle img{
+	/*margin-top:-4px;*/
+}
+
+.hamopen{
+	padding-bottom: 18px;
+	border-bottom: none;
+	border-radius: 5px 5px 0px 0px !important;
+	margin-bottom: 0px;
+}
+
+.mobile-search.search-open{
+	height:54px;
+	padding-bottom:28px;
+	border-bottom:none;
+	border-radius:5px 5px 0px 0px !important;
+	margin-bottom:0px;
+}
+/**/
+
+.navbar-toggle{
+	margin-left:6px;
+	border-radius:6px}
+
+.search-icon.mobile-search {
+	/*padding:12px;*/
+	/*border:none;*/
+	/*background:transparent;*/
+	/*color:#fff;*/
+}
+
+.mobile-learner-info{
+	padding:6px 12px 0px 12px;
+	border-bottom:6px solid #800d1c;
+	background:#2b2a26;
+	color:#d7d7d7;
+	font-family:'Avenir LT W01 55 Roman', Verdana, Arial, sans-serif;}
+
+.mobile-learner-info .learner-name{
+	padding-top:12px;
+	font-size:14px;
+}
+
+.mobile-learner-info .learner-id{
+	padding:12px 0 0 12px;
+	font-size: 11px;
+	text-transform:uppercase;
+}
+
+
+/*  MISC common elements  ------------------------------------------- */
+
+.back-to-top{
+
+}
+
+.back-to-top a{
+	display:block;
+	padding:8px 20px;
+	border:1px solid #ebebeb;
+	border-radius:6px;
+	background:#f5f5f5;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:14px;
+}
+
+.back-to-top a:hover{
+	background:#0867ab;
+	color:#fff;
+	text-decoration:none;
+}
+
+.back-to-top.white-link a{ 
+	background:#fff;
+}
+
+.back-to-top.white-link a:hover{ 
+	background:#fff;
+		background:#0867ab;
+}
+.morenews a{
+	width:100%;
+	display:block;
+	text-align:center;
+	text-transform:uppercase;
+	color:#333;
+	font-size:14px;
+	padding:10px;
+	background:#f8f8f8;
+	border:1px solid #d8d8d8;
+	margin:10px 0px;
+}
+.morenews a:hover, .morenews:focus{
+	background:#eee;
+}
+.news-block ul{
+	margin:0px;
+}
+#expandable-news{
+	border-top:1px solid #ccc;
+	margin-top:0px;
+}
+/* Our main course info section   ------------------------------------------- */
+
+.course-panel{
+	background:#ebebeb;
+	}
+	
+.course-info .header{
+	/*padding:15px 30px;*/
+	background:#3da1d2;
+	color:#fff;
+}
+
+.course-info .header:hover{
+	background:#5EB0D8;
+	
+}
+
+.course-info .header a{
+	color:#fff;
+
+
+}
+
+.course-info .header a:hover{
+	background:#5EB0D8;
+}
+.courseroomicon {
+	background:url(../img/courseroom.png) 0 0 no-repeat;
+	height:16px;
+	width:110px;
+}
+.course-info .header a:hover .courseroomicon{
+	background: url(../img/courseroom_white.png) 0 0 no-repeat;
+}
+a.visible-xs .courseroomicon{
+	/*position:absolute;*/
+	right:20px;
+}
+
+.course-info.white-bg, .upcoming-courses.white-bg, .previous-courses.white-bg {
+	padding:0px 5px 35px 5px;
+}
+
+.course-info .header .course-id{
+	text-transform:uppercase;
+	font-size:14px;
+	font-family:'Avenir LT W01 55 Roman', Verdana, Arial, sans-serif;
+}
+
+.course-info .header .course-title{
+	display:block;
+	margin:0;
+	font-weight:200;
+	font-size:24px;
+}
+
+.course-info .header .course-dates{
+	font-weight:200;
+	font-size:12px;
+	text-transform:uppercase;
+}
+
+.course-info.details {
+	border:1px solid #c8c8c8;
+	border-bottom:0;
+}
+
+/*.course-info .header span.course-dates{
+	text-align:right;
+	font-size:12px;
+	font-weight:lighter;
+	margin-left:10px;
+	color:#bce6fb;
+}*/
+.course-info .course-notifications{
+	padding:23px 0px 0px 0px;
+}
+
+.course-info .last-panels {
+	padding:25px 0px 0px 0px;
+	border:1px solid #000;
+	border-left:0;
+	max-height:280px;
+}
+
+.course-info .last-panels .assignments li {
+	padding-top:10px;
+}
+
+.course-notifications .faculty-info{
+	padding-right:0;
+}
+
+.course-notifications .faculty-info p{
+	margin:0 0 0 12px;
+	line-height:18px;
+	font-size:16px;
+}
+
+.course-notifications .faculty-info p.instructor{
+	color:#ccc;
+
+	text-transform:uppercase;
+	font-size:12px;
+}
+.course-notification .faculty-info p.faculty-name{
+	font-size:16px;
+}
+.course-notifications .faculty-info p.faculty-location{
+	color:#777272;
+	font-size:12px;
+}
+
+.course-notifications .contact-icons{
+	margin-top:6px;
+}
+
+.course-notifications .contact-icons a{padding:8px;}
+
+.panel {
+	box-shadow: none;
+	margin-bottom:0;
+	padding:0;
+}
+
+.panel-heading{padding:0;}
+
+.panel-heading a{
+	display:block;
+	padding:12px;
+	text-transform:uppercase;
+	font-size:14px;
+	background-color:#666;
+	color:#fff;
+}
+
+.panel-heading:hover{
+	background:#e5e5e5;
+}
+
+.first-panel {
+	padding:0;
+}
+
+.panel-inner-box {
+	border:1px solid #000;
+	padding:25px 10px;
+	margin:0px 5px 0px 5px;
+	min-height:245px;
+}
+
+.panel-inner-box ul {
+	padding:0;
+	margin:0;
+}
+
+.panel-inner-box ul li {
+	list-style:none;
+	padding:25px 0px 5px 0px;
+	margin:0;
+	border-bottom:1px solid #000;
+	font-size:11px;
+	text-transform: uppercase;
+}
+
+.panel-default {
+	border:0;
+}
+
+.course-detail {
+	border:3px solid #c8c8c8;
+	border-top:0;
+	min-height:152px;
+}
+
+.course-detail .assignmentdate, .course-detail .assignmenttitle{
+	display:block;
+	width:100%;
+	color:#939393;
+}
+.course-detail .assignmentdate{
+	font-size:85%;
+}
+.phone-courseitem{
+	display:none !important;
+}
+.course-detail .panel-body hr{margin:12px 0;}
+
+
+ul.announcement-list li,
+ul.discussion-list li{
+	margin-bottom:12px;
+	padding:6px 0;
+	border-bottom:1px solid #eee;
+}
+ul.announcement-list li:last-child,
+ul.discussion-list li:last-child{
+	padding-bottom:0;
+	border:none;
+}
+
+ul.announcement-list .time-stamp{
+	margin-bottom:3px;
+}
+
+ul.announcement-list h3{
+	margin:0 0 12px 0;
+	font-size:18px;
+	color:#333;
+	font-weight:bold;
+}
+.announcement-list a i{
+	line-height:26px;
+}
+
+.upcoming-courses h1, .previous-courses h1 {
+	font-size:16px;
+	color:#333;
+	text-transform: uppercase;
+	background:#666;
+	color:#fff;
+	padding:20px 10px;
+	margin:0;
+	border:none;
+}
+a.inactivecoursehead{
+	display:block;
+	/*margin:20px 15px 10px 15px;*/
+	padding:18px 15px 15px 30px;
+	font-size:16px;
+	color:#fff;
+	background:#666;
+	text-transform:uppercase;
+}
+a.inactivecoursehead i.fa{
+	margin-top:-2px;
+}
+a.inactivecoursehead:hover, a.inactivecoursehead:focus{
+	background:#757575;
+}
+
+.upcoming-courses .course-panel {
+	border:3px solid #c8c8c8;
+	border-top:0;
+}
+
+.upcoming-courses .course-id{
+	display:block;
+	font-size:14px;
+	text-transform:uppercase;
+	font-weight:normal;
+}
+.upcoming-courses .course-info a.visible-xs .course-id{
+	margin-bottom:-5px;
+}
+.upcoming-courses ul.upcoming-list,
+.previous-courses ul.previous-list{
+	padding:0 30px;
+}
+
+ul.upcoming-list li, ul.previous-list li{
+	margin-bottom:12px;
+	padding:6px 0 12px 0;
+	border-top:1px solid #eee;
+}
+ul.upcoming-list li:last-child{
+	/*border:none;*/
+
+}
+ul.previous-list li{
+	font-size:15px;
+}
+ul.previous-list .row div:first-child, ul.upcoming-list .row div:first-child{
+	padding-left:0px;
+}
+.upcoming-courses .course-info .course-id{
+	margin:0;
+}
+
+
+
+/*  Additional resources area  ------------------------------------------- */
+
+.resource-blocks{margin:30px 5%;}
+
+.resource-blocks .resource-block-content{
+	padding-top:16px;
+	display:block;
+	height:110px;
+	color:#fff;
+	font-size:13px;
+	text-align:center;
+	text-transform:uppercase;
+	font-family:'Avenir LT W01 55 Roman', Verdana, Arial, sans-serif;
+}
+.resource-blocks .resource-block-content:hover, .resource-blocks .resource-block-content:focus{
+	background:#C7B979;
+}
+.resource-blocks .resource-block-content img{
+	display:block;	
+	margin:0px auto 6px auto;
+}
+
+span.badge{
+	background:#675e0d;
+	border-radius:0px;
+	margin-left:5px;
+}
+.resource-blocks .col-md-2{
+	padding:0px;
+	border-bottom:3px solid #fff;
+	border-left:3px solid #fff;
+	background:#c3b055;
+	}
+
+.resource-blocks .resource-block-content a{
+	color:#fff;
+}
+
+.resource-block-content .task-list{
+	margin-bottom:12px;
+	padding:0 12px;
+	height:58px;
+}
+.resource-block-content.taskblock{
+	padding-top:10px;
+}
+.resource-block-content .task-list li{
+	font-size:12px;
+	line-height:20px;
+}
+	
+.additional-resources{
+	margin:20px 5% 0 5%;
+	padding-bottom:30px;
+}	
+
+.additional-resources h4{
+	margin-top:12px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+.additional-resources h4.inspire-col{
+	margin-top:30px;
+}
+.additional-resources li{
+		padding:4px 0;
+		color:#575757;
+}
+
+.additional-resources a{
+		color:#56a7dd;
+}
+
+.additional-resources a:hover{
+		color:#000;
+}
+.inspire{
+	text-transform:uppercase;
+	font-size:14px;
+	color:#d7932f;
+	font-weight:normal;
+}
+
+/* Learner profile at bottom  ------------------------------------------- */
+
+.learner-profile{
+	padding:5px 50px;
+	background:#8c8a87;
+	color:#fff;
+	font-size:12px;
+}
+.learner-profile .container{
+	padding:5px 10%;
+	width:auto !important;
+}
+.learner-profile a {color:#fff;}
+
+.learner-profile .learner-portrait{
+	margin-right:12px;
+	border:3px solid #fff;
+	border-radius:6px;
+}
+	
+.learner-profile .learner-info{
+	margin-right:24px;
+	padding-top:20px;
+}
+.learner-profile .learner-name{
+	margin-bottom:4px;
+	font-weight:200;
+	font-size:18px;
+}
+
+.learner-profile .learner-id{
+	padding:4px 8px;
+	border-radius:4px;
+	background:#787571;
+}
+
+.learner-profile .profile-options{
+	padding-top:25px;
+	text-align:center;
+	text-transform:uppercase;
+	/*margin-top:22px;*/
+}
+
+.learner-profile .profile-options img{
+	margin:12px;
+}
+
+.learner-profile .profile-options a{
+	display:block;
+	margin:0 10px;
+}
+.learner-profile .friend-req{
+	color:#333;
+}
+.friend-req{
+	position:absolute;
+	/*width:220px;*/
+	font-size:14px;
+	height:37px;
+	text-align:center;
+	line-height:38px;
+	margin-top:-10px;
+	right:20px;
+	padding:0px 10px;
+	background:#f0af17;
+	color:#333;
+	text-transform:uppercase;
+}
+
+.friend-req span.badge{
+	/*margin-right:5px;*/
+	border-radius:10px;
+	position:relative;
+	z-index:999;
+	margin-left:20px;
+	margin-top:-5px;
+}
+.friend-req img{
+	position:absolute;
+	z-index:11;
+	top:9px;
+	margin-left:5px;
+}
+
+/* tech support at bottom  ------------------------------------------- */
+
+.tech-support{
+	padding:20px 15px 40px 15px;
+	/*text-transform:uppercase;*/
+	font-size:14px;
+	letter-spacing:.05em;
+	color:#bfbfbf;
+}
+
+.tech-support .phone-gap{padding:0 10px; opacity:0;}
+
+.tech-support a.contact-support{
+	padding:12px 20px;
+	border:none;
+	background:#0867ab;
+	color:#fff;
+	margin-left:-20px;
+	margin-right:-20px;
+	text-transform:uppercase;
+}
+
+.phones{
+	font-size:17px;
+	color:#fff;
+}
+.tech-support a.contact-support:hover, 
+.tech-support a.contact-support:focus{
+	background:#2887cb;
+}
+
+.app-links{
+	padding-bottom:20px;
+	text-transform:uppercase;
+	letter-spacing:.05em;
+	font-size:14px;
+	margin-top:20px;
+}
+
+.logout{
+	margin-bottom:20px;
+	text-transform:uppercase;
+	font-size:16px;
+}
+
+ul.about-links li{display:inline;}
+
+ul.about-links a{
+	padding:6px 12px;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:12px;
+	color:#bfbfbf;
+}
+
+ul.about-links li:after{
+	content:" | ";
+}
+
+ul.about-links li:last-child:after{
+	content:"";
+}
+
+.footer{
+	text-align:center;
+}
+
+.footer .footer.dark-gray-bg {
+	padding-bottom:65px;
+}
+
+.settings {
+	background-color:#5f6273;
+}
+
+.settings ul {
+	padding:0;
+	margin:0;
+	float:right;
+}
+
+.settings ul li {
+	padding:0;
+	margin:0;
+	float:left;
+	list-style:none;
+	margin-right:40px;
+}
+
+.settings ul li a {
+	color:#fff;
+}
+
+.copyright {
+	margin:0;
+	padding:0;
+}
+
+/* Help Links */
+
+.list-unstyled {
+	float:left;
+
+}
+
+
+/* additional panels: modal app prompt ------------------------------------------- */
+
+#appPrompt .modal-dialog{
+	height:96%;
+
+}
+
+#appPrompt .close-modal{
+	float:right;
+	margin:20px 12px 30px 0;
+	width:auto;
+}
+#appPrompt .modal-content{
+	height:100%;
+
+}
+
+/*#appPrompt button{
+	display:block;
+	width:85%;
+	margin:0 auto;
+	font-weight:200;
+	font-size:14px;
+	text-transform:uppercase;
+		text-align:center;
+}*/
+#appPrompt a{
+	display:block;
+	width:85%;
+	margin:0 auto;
+	font-weight:200;
+	font-size:14px;
+	text-transform:uppercase;
+		text-align:center;
+}
+
+#appPrompt .or-divider{
+	padding-top:12px;
+	text-transform:uppercase;
+		text-align:center;
+}
+
+#appPrompt .remember-choice{
+	display:block;
+	width:85%;
+	margin:40px  auto 0 auto;
+	border:1px solid #ccc;
+	background:#f5f5f5;
+
+	padding:6px 0 0 12px;
+}
+
+#appPrompt .remember-choice label{
+	font-weight:200;
+	padding-left:6px;
+}
+
+/* aditional panels: news ------------------------------------------- */
+
+.news-alert{
+	background:#fab02f;
+	padding:20px 0 10px 0;
+}
+.news-alert a{
+	font-weight:bold;
+	color:#000;
+	font-size:15px;
+	width:80px;
+	display:inline-block;
+}
+a.less_btn{
+	display:block;
+	width:100%;
+	text-align:center;
+}
+.full-width-block{padding:20px 0px 20px 30px;}
+
+.content-panel{ 
+	margin:20px 5%;
+	border:1px solid #dbdbdb;
+	background:#fff;
+}
+
+.content-panel .header{ }
+.content-panel .content{ }
+
+.news-block .news-list{
+	margin-bottom:20px;
+	/*border-right:1px solid #ccc;*/
+}
+
+.news-block h4{
+	text-transform:uppercase;
+	margin:0 0 12px 0;
+}
+
+.news-block .news-list li{
+		padding:4px 0;
+}
+
+.news-block .news-list a{
+	color:#666;
+}
+
+.news-block .news-list a:hover{color:#000}
+
+.news-block img{max-width:100%;}
+
+.news-cta{
+	position:relative;
+	padding:30px 12px 0px 12px;
+	width:350px;
+	height:220px;
+	margin-bottom:20px;
+	background:url(../img/home-news.jpg);
+	font-family:'Avenir LT W01 55 Roman', Verdana, Arial, sans-serif;}
+
+.news-cta h1{
+	margin:0 120px 12px 0;
+	color:#666;
+	text-transform:uppercase;
+	font-size:24px;
+}
+	
+.news-cta a, .news-mobile .news-cta a{
+	/*position:absolute;*/
+	bottom:6px;
+	display:block;
+	margin-top:20px;
+	padding:8px 20px;
+	/*width:326px;*/
+	background:#000;
+	background:rgba(0,0,0,.7);
+	color:#fff;
+	text-align:center;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-weight:200;
+	font-size:14px;
+}
+	
+.news-cta a:hover{
+	background:#000;
+}
+
+.news-mobile h4{
+	text-transform:uppercase;
+	margin-top:20px;
+}
+
+.news-mobile img{
+	max-width:100%;
+}
+
+.news-mobile ul{
+	/*margin-bottom:20px;*/
+}
+
+.news-mobile li{
+	padding:12px 0;
+	border-bottom:1px solid #ccc;
+}
+
+.news-mobile li:last-child{border:none}
+
+.news-mobile a{
+	color:#666;
+}
+
+/* aditional panels: hero ------------------------------------------- */
+
+.hero-mobile{
+	background:url('../img/hero-mobile-bg.jpg');
+	background-size:cover;
+}
+
+.hero-tablet{
+	background:url('../img/hero-tablet-bg.jpg');
+}
+
+.hero-desktop{
+	background:url('../img/hero-desktop-bg.jpg');
+	height:242px;
+}
+
+.hero-mobile-content{
+	padding:20px 12px 5px 12px;
+	font-family:'Avenir LT W01 55 Roman', Verdana, Arial, sans-serif;
+}
+
+.hero-tablet-content{
+	padding:20px 37px 5px 37px;
+	font-family:'Avenir LT W01 55 Roman', Verdana, Arial, sans-serif;
+}
+
+.hero-desktop-content{
+	padding:30px 37px 20px 37px;
+	font-family:'Avenir LT W01 55 Roman', Verdana, Arial, sans-serif;
+}
+
+.hero-mobile h1, .hero-tablet h1{
+	margin:0;
+	color:#666;
+	text-transform:uppercase;
+	font-size:24px;
+}
+
+.hero-desktop h1{
+	margin:0 0 20px 0;
+	color:#666;
+	text-transform:uppercase;
+	font-size:36px;
+}
+
+.hero-mobile a, .hero-tablet a{
+	display:block;
+	margin-top:15px;
+	margin-bottom:5px;
+	padding:5px 20px;
+	max-width:350px;
+	background:#000;
+	background:rgba(0,0,0,.7);
+	color:#fff;
+	text-align:center;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-weight:200;
+	font-size:14px;
+} 
+
+.hero-desktop a{
+	font-size:20px;
+	display:block;
+	margin-top:50px;
+	padding:8px 20px;
+	max-width:450px;
+	background:#000;
+	background:rgba(0,0,0,.7);
+	color:#fff;
+	text-align:center;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-weight:200;
+}
+
+.hero-tablet a{
+	/*max-width:320px;*/
+	font-size:14px;
+}
+
+.hero-mobile a:hover, .hero-tablet a:hover, .hero-desktop a:hover{
+	background:#000;
+}
+
+
+
+
+
+
+/* mega nav take 1 ------------------------------------------- */
+/*!
+ * Yamm!3
+ * Yet another megamenu for Bootstrap 3
+ * 
+ * http://geedmo.github.com/yamm3
+ */
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+.yamm .container {
+  position: relative;
+}
+.yamm .dropdown-menu {
+  left: auto;
+}
+.yamm .nav.navbar-right .dropdown-menu {
+  right: 0;
+  left: auto;
+border:none;
+}
+.yamm .yamm-content {
+  padding: 20px 30px;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  right: 0;
+  left: 0;
+border:none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    margin-top: 0px;
+    padding-left:20px;
+    padding-right:20px;
+    z-index:9999999;
+}
+/*Added CA*/
+.navhome{
+	display:block;
+	overflow:hidden;
+	float:none;
+	margin:0px 0px 10px 0px ;
+	color:#005a8c;
+	text-transform: uppercase;
+	font-size: 14px;
+	border-bottom:1px solid #ccc;
+	padding-bottom:10px;
+}
+.yamm-content{
+	font-size:14px;
+}
+.yamm-content li a{
+	color:#333;
+}
+.yamm-content li.subnavtitle{
+	text-transform:uppercase;
+	font-weight: bold;
+}
+
+/*Added by CA starting 6.26.14*/
+.falsepage {
+	padding:30px 10%;
+}
+.falsepage h1{
+	font-size:22px;
+	color:#fff;
+}
+.falsepage h2{
+	color:#fff;
+	font-size:18px;
+}
+.falsepage p{
+	color:#fff;
+	font-size:13px;
+}
+.falsepage img{
+	margin:0 auto;
+	display:block;
+	width:100%;
+	max-width:970px;
+}
+.falsepage.mycapella, .falsepage.aboutme, .falsepage.fullsite, .falsepage.learneremail{
+	padding:0px;
+}
+.falsepage.learneremail img{
+	width:320px;
+}
+/*.falsepage.mycapella img, .falsepage.aboutme img{
+	margin:0 auto;
+	display:block;
+}*/
+.course-info .header a{
+	overflow:hidden;
+	padding:10px;
+}
+.course-info .course-panel  header{
+	padding:0px;
+}
+.course-panel .course-section{
+	float:none;
+	clear:both;
+}
+.course-section h1 {
+	color:#fff;
+	margin:0;
+	padding:15px;
+}
+.course-panel .header .row a >div{
+	padding:0px;
+}
+.course-panel .row{
+	margin:0px;
+}
+.upcoming-list h3{
+	font-size: 18px;
+	line-height: 22px;
+	color:#56a7dd;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.upcoming-list .course-info .small{
+	color:#000;
+}
+.friend-req.friend-block{
+	position: relative;
+	text-align: center;
+	margin: 0px;
+	right:0px;
+}
+
+/* responsive tweaks   ------------------------------------------- */
+
+@media (max-width: 992px){
+	.course-notifications .contact-icons{
+		/*margin-top:10px;*/
+
+	}
+	.course-notifications .faculty-info{
+		margin-top:8px;
+	}
+	
+}
+@media (max-width:1052px){
+	.learner-profile .profile-options a img{
+		display:block;
+		margin:3px auto 6px auto;
+	}
+}
+@media (max-width: 800px){
+	.learner-profile .profile-options a img{
+		display:inline;
+		margin:3px auto 6px auto;
+	}
+	.learner-profile .profile-options{
+	clear:left;
+	text-align:left;
+	padding-top:0px;
+	margin-top:5px;
+	width:100%;
+}
+	
+.learner-profile .profile-options li{
+	/*display:block;*/
+	width:45%;
+	float:right;
+}
+.learner-profile .profile-options a{
+	display:block;
+	margin:0;
+	padding:8px 0;
+}
+
+.learner-profile .profile-options a img{
+	margin:0 12px 0 0;
+}
+}
+/* iPad Landscape mode */
+@media (min-width: 768px) and (max-width: 992px) {
+	
+	.learner-profile .profile-options a{
+		margin:0 6px;
+	}
+	
+	/*.learner-profile .profile-options a img{
+		display:block;
+		margin:3px auto 6px auto;
+	}*/
+	.navbar-collapse.collapse{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	.navbar-inverse .navbar-nav>li>a{
+		padding-left:12px;
+		padding-right:12px;
+		border:0;
+	}
+	.full-width-block{
+		padding:0px;
+	}
+	.news-block .news-list{
+		width:360px !important;
+	}
+	.back-to-top{
+		position:relative;
+		float:none;
+		margin:30px auto;
+	}
+	.course-info .header .course-dates{
+		padding:6px 0;
+		text-align:left;
+	}
+	.learner-profile .container{
+		width:auto !important;
+	}
+
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
+.back-to-top{
+		position:relative;
+		float:none;
+		margin:30px auto;
+	}
+.navigation{
+	border-bottom:none;
+}
+.full-width-block{
+		padding:0px;
+	}
+.navbar{
+	border:none;
+}
+
+.navbar-collapse {
+	overflow-x: auto;
+	max-height: none;
+}
+.course-detail .assignmenttitle, .course-detail .assignmentdate{
+	width:inherit;
+	float:left;
+}
+.nav.navbar-nav{
+	margin-bottom:0;
+	margin-top:0px;
+	border-bottom:1px solid #444;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	padding:8px 10px;
+}
+.navbar-brand{
+	padding:17px 0 0 0px;
+}
+.course-info .header a{
+	padding:15px;
+}
+.course-info .header{
+	/*padding:15px;*/
+}
+.course-info .course-notifications,
+.course-info .panel-group{
+	padding:12px 0 0 0;
+}
+
+.course-info .header .course-dates{
+	padding:6px 0;
+	text-align:left;
+}
+
+.course-notifications .faculty-info{
+	margin-right:6px;
+}
+
+
+
+
+.upcoming-courses h1,
+.previous-courses h1 {
+	margin:20px 0 10px 0;
+}
+.upcoming-courses ul.upcoming-list,
+.previous-courses ul.previous-list{
+	padding:0 15px;
+}
+
+
+.course-panel,
+.resource-blocks,
+.additional-resources{
+	margin:6px;
+}
+
+.learner-profile{
+	padding:10px 15px;
+}
+
+.learner-profile .profile-options{
+	clear:left;
+	text-align:left;
+	padding-top:0px;
+	margin-top:5px;
+	width:100%;
+}
+	
+.learner-profile .profile-options li{
+	/*display:block;*/
+	width:45%;
+	float:right;
+}
+.learner-profile .profile-options a{
+	display:block;
+	margin:0;
+	padding:8px 0;
+}
+
+.learner-profile .profile-options a img{
+	margin:0 12px 0 0;
+}
+
+
+
+.footer{
+
+	padding:10px 15px 40px 15px;
+}
+
+
+.full-width-block{padding:0 6px;}
+.content-panel{ 
+	margin:20px 6px;
+
+}
+
+}
+
+/* Small size tweaks */
+
+@media (max-width: 767px) {
+	/*.course-notifications .contact-icons{
+		clear:left;
+		margin-top:10px;
+	} ONly email icon don't need to drop a line. Maybe for phone size*/ 
+	
+	ul.about-links li{display:block;text-align:center;}
+	ul.about-links li:after{
+		content:"";
+	}
+	ul.about-links li a{display:block;padding:6px;}
+	.navbar-inverse .navbar-nav>li{
+		width:50%;
+		float:left;
+		height:50px;
+	}
+	.navbar-inverse .navbar-nav>li>a{
+		display:block;
+		height:50px;
+		line-height:38px;
+	}
+	.nav>li>a>img{
+		float:left;
+		margin-right:10px;
+		margin-top:9px;
+	}
+	
+	.course-notifications .faculty-info p.faculty-name{
+		margin:10px 0px 0px 5px;
+	}
+	
+}
+@media (max-width: 475px){
+	.navbar-toggle{
+		margin-right:3px !important;
+	}
+	.learner-profile{
+		padding:0px;
+	}
+	.learner-profile .friend-req{
+		display: block;
+		/*width: 320px;*/
+		position: relative;
+		margin-left: -12px;
+		margin-top: -5px;
+		margin-bottom:10px;
+		right: auto;
+	}
+	.news-alert{
+		padding:15px 0px 0px 0px;
+	}
+	.news-alert .col-xs-10{
+		width:auto;
+		margin-left:40px;
+		margin-top:-20px;
+	}
+	.course-detail{
+		padding:5px;
+	}
+	.course-notifications .faculty-info p.faculty-name{
+		margin:10px 0px 0px 5px;
+	}
+	.course-notifications .faculty-info{
+		padding-right:5px;
+	}
+	.course-info .header a{
+		display:none !important;
+	}
+	.course-info .header a.phone-courseroom{
+		display:block !important;
+	} /*Phone only link that shows the modal window "view in app" shows at any width under 475px - make smaller???*/
+	.mobilenavbar .navbar-brand img{
+		display:none !important;
+	}
+	.mobilenavbar .navbar-brand img.phone-sm-logo{
+		display:block !important;
+	}
+	.course-detail .courseitem, .previous-courses .courseitem{
+		display:none !important;
+	}
+	.course-detail .phone-courseitem, .previous-courses .phone-courseitem{
+		display:block !important;
+	}
+	.tech-support a.contact-support{
+		margin-left:-40px;
+		margin-right:-40px;
+		font-size:12px;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+/*.course-notifications .contact-icons{
+	clear:none;
+	margin-top:10px;
+}*/
+}
+
+
