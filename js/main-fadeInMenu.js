@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 	$('.mobilenavbar .mobileNav').click(function(){
 		$('.mobile-navigation').slideToggle();
-		$(this).toggleClass('close-mobile');
+		//$(this).toggleClass('close-mobile');
 	});
 
 	// Prevent Touch click on mobile devices 

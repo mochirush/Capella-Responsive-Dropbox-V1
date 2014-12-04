@@ -164,12 +164,12 @@ h1,h2,h3,h4
 }
 .header-primary
 {
-	background: #000;
+	background: #1a1712;
 	color: #ccc;
 }
 .navigation
 {
-	background: #2b2a27;
+	background: #1a1712;
 	border-bottom: 6px solid #800d1c;
 }
 .primary-header
@@ -177,7 +177,7 @@ h1,h2,h3,h4
 }
 .navbar-inverse
 {
-	background: #2b2a26;
+	background: #1a1712;
 	border: none;
 }
 .navbar-nav {
@@ -204,19 +204,17 @@ h1,h2,h3,h4
 .navbar-inverse .navbar-nav>.active>a:hover,
 .navbar-inverse .navbar-nav>.active>a:focus
 {
-	background: #000;
 	background: transparent;
 	color: #fff;
 }
 .navbar-inverse .navbar-nav>li>a:hover,
 .navbar-inverse .navbar-nav>li>a:focus
 {
-	background: #000;
 	color: #fff;
 }
 .navbar
 {
-	background-color: #000;
+	background-color: #1a1712;
 	margin-bottom: 0;
 	min-height: 28px;
 }
@@ -382,7 +380,7 @@ img.phone-sm-logo
 .learner-profile-top .email-icon
 {
 	float: left;
-	padding: 0px 0px 0px 25px;
+	padding: 0px 0px 0px 30px;
 }
 .learner-profile-top .search-this
 {
@@ -400,13 +398,12 @@ img.phone-sm-logo
 .learner-profile-dropdown
 {
 	background: #1a1712;
-	border: 1px solid #fff;
 	border-top: 1px solid #4e4c4a;
 	display: none;
 	left: 50%;
-	margin-left: -161px;
-	margin-top: 80px;
-	max-width: 550px;
+	margin-left: -54px;
+	margin-top: 75px;
+	max-width: 250px;
 	padding: 20px;
 	position: absolute;
 	z-index: 10000;
@@ -673,10 +670,10 @@ img.phone-sm-logo
 }
 .mobileNav
 {
-	background: url('../img/hamburger-new.png') no-repeat;
+	background: url('../img/hamburger-icon-new.png') no-repeat;
 	display: block;
-	height: 34px;
-	width: 43px;
+	height: 73px;
+	width: 78px;
 }
 .mobileNav.close-mobile
 {
@@ -706,26 +703,23 @@ img.phone-sm-logo
 }
 .back-to-top
 {
-	float: none;
-	margin: 0 auto;
-	margin-top: 30px;
+	float: right;
+	margin:40px 30px 40px 0px;
+	cursor:pointer;
 }
 .back-to-top a
 {
-	background: #f5f5f5;
-	border: 1px solid #ebebeb;
-	border-radius: 6px;
-	display: block;
-	font-size: 14px;
-	padding: 8px 20px;
-	text-align: center;
-	text-transform: uppercase;
+	background:url('../img/back-to-top-new.png') no-repeat;
+	width:77px;
+	height:36px;
+	display:block;
 }
 .back-to-top a:hover
 {
-	background: #0867ab;
-	color: #fff;
-	text-decoration: none;
+
+}
+.back-to-top .fa.fa-caret-up {
+
 }
 .back-to-top.white-link a
 {
@@ -803,7 +797,8 @@ a.visible-xs .courseroomicon
 .upcoming-courses.white-bg, .previous-courses.white-bg
 {
 	border: 1px solid #e2e2e2;
-	padding:25px 0px 0px 30px;
+	padding:25px 30px 0px 30px;
+	margin-bottom:10px;
 }
 .course-info .header .course-id
 {
@@ -921,10 +916,11 @@ a.visible-xs .courseroomicon
 .first-panel
 {
 	padding: 0;
+	background:#fff;
 }
 .panel-inner-box
 {
-	padding:25px 0px 0px 30px;
+	padding:25px 0px 0px 25px;
 }
 .panel-inner-box ul
 {
@@ -961,7 +957,7 @@ a.visible-xs .courseroomicon
 }
 
 .panel-inner-box .pull-right {
-	padding-right:20px;
+	padding-right:15px;
 	font-family:Arial;
 	font-size:12px;
 	color:#4a4d4e;
@@ -976,6 +972,7 @@ a.visible-xs .courseroomicon
 }
 .entire-panel-wrapper {
 	overflow:hidden;
+	margin-bottom:20px;
 }
 .course-detail .assignmentdate, .course-detail .assignmenttitle
 {
@@ -1068,9 +1065,9 @@ a.inactivecoursehead:hover, a.inactivecoursehead:focus
 }
 .upcoming-courses .course-panel .course-section ul li a
 {
-
+	float:left;
 }
-.upcoming-courses .course-panel .course-section ul
+.upcoming-courses .course-panel .course-section ul, .previous-courses .course-panel .course-section ul
 {
 	margin: 15px 0px 0px 0px;
 	padding: 0;
@@ -1078,7 +1075,7 @@ a.inactivecoursehead:hover, a.inactivecoursehead:focus
 	font-size:14px;
 	color:#333333;
 }
-.upcoming-courses .course-panel .course-section ul li
+.upcoming-courses .course-panel .course-section ul li, .previous-courses .course-panel .course-section ul li
 {
 	border-top: 1px solid #e0e0e0;
 	border-bottom: 1px solid #e0e0e0;
@@ -1087,41 +1084,26 @@ a.inactivecoursehead:hover, a.inactivecoursehead:focus
 	margin: 0px 0px 10px 0px;
 	padding: 10px 0px 10px 0px;
 }
-.upcoming-courses .course-panel .course-section ul li:last-child
+.upcoming-courses .course-panel .course-section ul li:last-child, .previous-courses .course-panel .course-section ul li:last-child
 {
 	border: none;
 }
 .upcoming-courses .course-panel .course-section ul li .course-date {
-	padding-left:40px;
+	color:#666;
 }
-.previous-courses .course-panel .course-section
-{
-	padding: 10px 10px;
-}
-.previous-courses .course-panel .course-section ul
-{
-	margin: 0;
-	padding: 0;
-}
-.previous-courses .course-panel .course-section ul li
-{
-	float: left;
-	list-style: none;
-	margin: 0;
-	margin-right: 25px;
-	padding: 0;
-}
+
 .upcoming-courses .course-panel .course-section .courses-arrow
 {
-	background: url('../img/down-arrow-black.png') no-repeat;
+	background: url('../img/course-down-arrow-new.png') no-repeat;
 	cursor: pointer;
-	height: 12px;
-	margin: 7px 0px 0px 15px;
-	width: 17px;
+	height: 9px;
+	margin: 10px 5px 0px 0px;
+	width: 16px;
+	float:right;
 }
 .upcoming-courses .course-panel .course-section .courses-arrow.up
 {
-	background: url('../img/up-arrow-black.png') no-repeat;
+	background: url('../img/course-up-arrow-new.png') no-repeat;
 }
 .upcoming-courses .course-panel .course-section .upcomingcourse
 {
@@ -1133,16 +1115,24 @@ a.inactivecoursehead:hover, a.inactivecoursehead:focus
 {
 	height: 50px;
 }
+.tasks-giving-wrapper {
+	background:#f2f2f2;
+	padding-bottom:25px;
+}
+.tasks {
+	margin-left:12%;
+}
 .tasks, .inspire-giving
 {
-	background-color: #ebebeb;
+	background-color: #fff;
 	margin-bottom: 25px;
-	min-height: 180px;
-	padding: 40px 15px;
+	padding: 30px 15px;
+	border:1px solid #e2e2e2;
+	max-height:230px;
 }
-.tasks a, .inspire-giving a
+.tasks img, .inspire-giving img
 {
-	font-size: 14px;
+	padding-bottom:20px;
 }
 .tasks h3, .inspire-giving h3
 {
@@ -1151,8 +1141,17 @@ a.inactivecoursehead:hover, a.inactivecoursehead:focus
 	padding: 0;
 	text-transform: uppercase;
 }
+.tasks-slogan {
+	color:#666;
+	font-size:18px;
+	font-family:Avenir;
+	display:block;
+	width:99%;
+	padding:5px 0px 10px 0px;
+}
 .resource-blocks
 {
+	padding-top:25px;
 }
 .resource-blocks .resource-block-content
 {
@@ -1234,7 +1233,7 @@ span.badge
 }
 .additional-resources a
 {
-	color: #575757;
+	color: #666;
 	font-family:Arial;
 	font-size:17px;
 	font-weight:normal;
@@ -1345,7 +1344,7 @@ span.badge
 	color: #bfbfbf;
 	font-size: 14px;
 	letter-spacing: .05em;
-	padding: 20px 15px 40px 15px;
+	padding: 20px 15px 20px 15px;
 }
 .tech-support .phone-gap
 {
@@ -1354,7 +1353,7 @@ span.badge
 }
 .tech-support a.contact-support
 {
-	background: #0867ab;
+	background: #3da1d2;
 	border: none;
 	color: #fff;
 	margin-left: -20px;
@@ -1365,7 +1364,9 @@ span.badge
 .phones
 {
 	color: #fff;
-	font-size: 17px;
+	font-size: 14px;
+	font-family:Arial;
+	text-rendering:optimizeLegibility;
 }
 .tech-support a.contact-support:hover, 
 .tech-support a.contact-support:focus
@@ -1379,6 +1380,13 @@ span.badge
 	margin-top: 20px;
 	padding-bottom: 20px;
 	text-transform: uppercase;
+	color:#bfbfbf;
+}
+.app-store-icon {
+	padding-right:15px;
+}
+.play-store-icon {
+	padding-left:15px;
 }
 ul.about-links li
 {
@@ -1387,7 +1395,6 @@ ul.about-links li
 ul.about-links a
 {
 	color: #bfbfbf;
-	color: #fff;
 	font-size: 12px;
 	padding: 6px 12px;
 	text-transform: uppercase;
@@ -1403,10 +1410,16 @@ ul.about-links li:last-child:after
 .footer
 {
 	text-align: center;
+	background:#1a1712;
+	clear:both;
+	margin-top:10px;
 }
 .footer .footer.dark-gray-bg
 {
-	padding-bottom: 65px;
+	padding-bottom: 35px;
+}
+.footer-second-column {
+	margin-left:4%;
 }
 .settings
 {
@@ -1436,6 +1449,12 @@ ul.about-links li:last-child:after
 {
 	margin: 0;
 	padding: 0;
+	color:#fff;
+	font-size:12px;
+}
+.copyright a {
+	color:#fff;
+	text-decoration: underline;
 }
 .list-unstyled
 {
@@ -1867,9 +1886,7 @@ a.less_btn
 	}
 
 	@media (min-width:360px) and (max-width:768px){
-		.salutation {
-			display:none;
-		}
+
 	}
 
 	@media (min-width:640px) and (max-width:768px){
@@ -1892,7 +1909,6 @@ a.less_btn
 	}
 	.navbar-header
 	{
-		margin-top: 20px;
 		width: auto;
 	}
 	.navbar-header button
@@ -1922,7 +1938,7 @@ a.less_btn
 	{
 		float: right;
 		margin-bottom: 10px;
-		margin-right: 18px;
+		margin-right: -19px;
 	}
 	.search.dark-grey
 	{
@@ -1935,17 +1951,13 @@ a.less_btn
 	}
 	.upcoming-courses.white-bg, .previous-courses.white-bg
 	{
-		float: none;
-		margin: 0 auto;
+
 	}
 	.course-info.white-bg
 	{
-		padding: 0px 10px 0px 10px;
+		margin-bottom:0;
 	}
-	.upcoming-courses.white-bg, .previous-courses.white-bg
-	{
-		padding: 0px 5px 20px 5px;
-	}
+
 	.upcoming-courses .course-panel, .previous-courses .course-panel
 	{
 		border: 0;
@@ -1958,15 +1970,13 @@ a.less_btn
 	}
 	.previous-courses .course-panel .course-section ul
 	{
-		border-bottom: 1px solid #808290;
 		float: left;
-		margin-bottom: 10px;
-		padding-bottom: 10px;
 		width: 100%;
 	}
 	.course-info .course-detail.first-box.one-line, .course-info .course-detail.first-box.two-line
 	{
 		min-height: initial !important;
+		margin-top:-42px;
 	}
 	.course-info .course-detail
 	{
@@ -1997,18 +2007,15 @@ a.less_btn
 	}
 	.entire-panel-wrapper
 	{
-		background: #ebebeb;
-		border-bottom: 1px solid #c9c9c9;
+		background: #fff;
+		border: 1px solid #e2e2e2;
 		float: left;
 		margin-bottom: 20px;
-		min-height: 402px;
 		width: 100%;
 	}
 	.panel-inner-box
 	{
 		background: #fff;
-		min-height: 189px;
-		padding-top: 0;
 	}
 	.panel.panel-default.col-sm-6
 	{
@@ -2022,22 +2029,29 @@ a.less_btn
 	{
 		padding: 0px 5px 0px 5px;
 	}
-	.tasks
-	{
-		border-right: 5px solid #fff;
-	}
+
 	.inspire-giving
 	{
-		border-left: 5px solid #fff;
+		width:38%;
+		max-height:215px;
+		margin-left:4%;
 	}
 	.tasks, .inspire-giving
 	{
 		padding: 10px 10px;
 	}
+	.tasks {
+		margin-left:10%;
+		width:38%;
+		max-height:215px;
+	}
 	.resource-blocks
 	{
 		margin-left: 8.5%;
-		padding: 0px 5px 0px 5px;
+		border-bottom:0;
+	}
+	.resource-blocks .resource-block-content {
+
 	}
 	.resource-blocks .col-sm-4.first
 	{
@@ -2053,7 +2067,7 @@ a.less_btn
 	}
 	.additional-resources
 	{
-		margin: 20px 5% 0 10%;
+		margin: 20px 5% 0 12.5%;
 	}
 	.additional-resources .col-sm-6.col-sm-offset-1
 	{
@@ -2092,9 +2106,15 @@ a.less_btn
 	.mobilenavbar {
 		display: block !important;
 	}
+	.navbar-brand {
+		height:73px;
+		padding:0px 0px 0px 15px;
+	}
+	.capella-logo-phone {
+		float:left;
+	}
 	.navbar-header
 	{
-		margin-top: 20px;
 		width: auto;
 	}
 	.navbar-header button
@@ -2124,7 +2144,8 @@ a.less_btn
 	{
 		float: right;
 		margin-bottom: 10px;
-		margin-right: 18px;
+		margin-right: -19px;
+		padding-right:0;
 	}
 	.search.dark-grey
 	{
@@ -2137,17 +2158,14 @@ a.less_btn
 	}
 	.upcoming-courses.white-bg, .previous-courses.white-bg
 	{
-		float: none;
-		margin: 0 auto;
+
 	}
 	.course-info.white-bg
 	{
-		padding: 0px 10px 0px 10px;
+		border:0;
+		margin-bottom:0;
 	}
-	.upcoming-courses.white-bg, .previous-courses.white-bg
-	{
-		padding: 0px 5px 20px 5px;
-	}
+
 	.upcoming-courses .course-panel, .previous-courses .course-panel
 	{
 		border: 0;
@@ -2160,15 +2178,13 @@ a.less_btn
 	}
 	.previous-courses .course-panel .course-section ul
 	{
-		border-bottom: 1px solid #808290;
 		float: left;
-		margin-bottom: 10px;
-		padding-bottom: 10px;
 		width: 100%;
 	}
 	.course-info .course-detail.first-box.one-line, .course-info .course-detail.first-box.two-line
 	{
 		min-height: initial !important;
+		margin-top:-42px;
 	}
 	.course-info .course-detail
 	{
@@ -2199,18 +2215,16 @@ a.less_btn
 	}
 	.entire-panel-wrapper
 	{
-		background: #ebebeb;
-		border-bottom: 1px solid #c9c9c9;
+		background: #fff;
+		border: 1px solid #e2e2e2;
 		float: left;
 		margin-bottom: 20px;
-		min-height: 402px;
+
 		width: 100%;
 	}
 	.panel-inner-box
 	{
 		background: #fff;
-		min-height: 189px;
-		padding-top: 0;
 	}
 	.panel.panel-default.col-sm-6
 	{
@@ -2224,22 +2238,27 @@ a.less_btn
 	{
 		padding: 0px 5px 0px 5px;
 	}
-	.tasks
-	{
-		border-right: 5px solid #fff;
-	}
 	.inspire-giving
 	{
-		border-left: 5px solid #fff;
+		width:38%;
+		max-height:215px;
+		margin-left:4%;
 	}
 	.tasks, .inspire-giving
 	{
 		padding: 10px 10px;
 	}
+	.tasks {
+		margin-left:10%;
+		width:38%;
+		max-height:215px;
+	}
 	.resource-blocks
 	{
 		margin-left: 8.5%;
-		padding: 0px 5px 0px 5px;
+	}
+	.resource-blocks .resource-block-content {
+
 	}
 	.resource-blocks .col-sm-4.first
 	{
@@ -2253,7 +2272,10 @@ a.less_btn
 	{
 		width: 28%;
 	}
-	.additional-resources
+	.resource-blocks .col-md-2 {
+		border-left: 6px solid #fff;
+		border-bottom:6px solid #fff;
+	}
 	{
 		margin: 20px 5% 0 10%;
 	}
@@ -2262,10 +2284,11 @@ a.less_btn
 		margin-left: 7%;
 		padding: 0;
 	}
-	.back-to-top.col-sm-6
+	.back-to-top
 	{
 		float: none;
 		margin: 0 auto;
+		width:77px;
 	}
 }
 
@@ -2274,7 +2297,7 @@ a.less_btn
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	.learner-profile-top
 	{
-		margin-right: 18px;
+		margin-right: -19px;
 	}
 
 }
@@ -2285,6 +2308,26 @@ a.less_btn
 	body
 	{
 		padding: 0;
+	}
+	.col-sm-12 {
+		float:left;
+		width:100%;
+	}
+	.col-xs-12 {
+		float:left;
+		width:100%;
+	}
+	.col-sm-6 {
+		float:left;
+		width:50%;
+	}
+	.col-sm-7 {
+		float:left;
+		width:58.33333333333333%;
+	}
+	.col-phone-12 {
+		float:left;
+		width:100%;
 	}
 	.container
 	{
@@ -2300,15 +2343,65 @@ a.less_btn
 	{
 		background: #1a1712;
 	}
+	.salutation
+	{
+		display: none;
+	}
+	.navbar-header .mobileNav {
+		display:none;
+	}
+	.phone-navigation {
+		clear:both;
+		border-top:1px solid #363432;
+		padding:0;
+		margin:0;
+		float:left;
+		width:100%;
+		display:block !important;
+	}
+	.phone-navigation .mobileNav {
+		background:url('../img/phone-hamburger.png') no-repeat;
+		height:25px;
+		width:21px;
+		display:block;
+		margin:0 auto;
+	}
+	.phone-navigation li {
+		float:left;
+		list-style:none;
+		padding:20px;
+		border-right:1px solid #363432;
+		height:66px;
+	}
+	.phone-navigation .learner-portrait {
+		margin-top:-8px;
+	}
+	.phone-navigation .email-icon {
+		margin-top:-13px;
+	}
+	.search-this
+	{
+		background: url('../img/search-icon-small-new-trans.png') no-repeat;
+		cursor: pointer;
+		display:block;
+		height: 25px;
+		width: 26px;
+		margin:0 auto;
+	}
+	.search-this.close-this
+	{
+		background: url('../img/search-icon-close-new.png') no-repeat;
+	}
+	.capella-logo-phone {
+		width:270px;
+		margin: 0 auto;
+		display:block;
+	}
 	.navigation
 	{
 		border-bottom: 0;
 	}
-	.navbar-header
-	{
-		margin-top: 20px;
-		width: auto;
-	}
+
 	.navbar-header button
 	{
 		background: none;
@@ -2334,8 +2427,7 @@ a.less_btn
 	}
 	.learner-profile-top
 	{
-		float: right;
-		margin-bottom: 10px;
+		display:none;
 	}
 	.search.dark-grey
 	{
@@ -2368,19 +2460,31 @@ a.less_btn
 		margin-top: 10px;
 		width: 45%;
 	}
+	.course-info .assignments {
+		padding-left:0;
+	}
+	.course-info .phone-border {
+		border-bottom:1px solid #e0e0e0 !important;
+	}
+	.course-info .header .course-dates {
+		margin:0;
+	}
+	.course-info .header .course-title {
+		padding-bottom:0;
+	}
+	.course-info .panel-inner-box.assignments-box {
+		padding-left:15px;
+	}
 	.upcoming-courses.white-bg, .previous-courses.white-bg
 	{
-		float: none;
-		margin: 0 auto;
+
 	}
 	.course-info.white-bg
 	{
-		padding: 0px 10px 0px 10px;
+		border:0;
+		margin-bottom:0;
 	}
-	.upcoming-courses.white-bg, .previous-courses.white-bg
-	{
-		padding: 0px 5px 20px 5px;
-	}
+
 	.upcoming-courses .course-panel, .previous-courses .course-panel
 	{
 		border: 0;
@@ -2393,17 +2497,18 @@ a.less_btn
 	}
 	.previous-courses .course-panel .course-section ul
 	{
-		border-bottom: 1px solid #808290;
 		float: left;
-		margin-bottom: 10px;
-		padding-bottom: 10px;
 		width: 100%;
 	}
-	.course-info .course-detail.first-box
+	.course-info .last-panels {
+		background: #fff;
+	}
+	.course-info .last-panels .course-detail.first-box
 	{
-		border-left: 3px solid #c3c3c3;
-		border-right: 3px solid #c3c3c3;
 		min-height: initial;
+		margin-top:0px;
+		padding:0;
+		margin-bottom:20px;
 	}
 	.course-info .course-detail
 	{
@@ -2445,11 +2550,12 @@ a.less_btn
 	.panel-inner-box
 	{
 		border: 0;
-		border-left: 3px solid #c3c3c3;
-		border-right: 3px solid #c3c3c3;
 		margin: 0;
 		min-height: initial;
-		padding-top: 0;
+		padding:0px 10px;
+	}
+	.panel-inner-box ul {
+		border:0;
 	}
 	.panel-inner-box.last
 	{
@@ -2457,12 +2563,12 @@ a.less_btn
 	}
 	.panel.panel-default
 	{
-		background: #ebebeb;
+		background: #fff;
+		padding-top:8px;
 	}
 	.panel-inner-box ul li
 	{
-		border-bottom: 0;
-		padding-top: 0px;
+		padding-top: 12px;
 	}
 	.last-panels
 	{
@@ -2475,22 +2581,21 @@ a.less_btn
 	{
 		padding: 0px 5px 0px 5px;
 	}
-	.tasks
+
+	.tasks, .inspire-giving
 	{
-		border-right: 5px solid #fff;
+		width:36%;
 	}
-	.inspire-giving
-	{
-		border-left: 5px solid #fff;
+	.tasks {
+		margin-left:12%;
 	}
 	.tasks, .inspire-giving
 	{
 		min-height: initial;
 		padding: 10px 10px;
 	}
-	.resource-blocks
-	{
-		padding: 0px 5px 0px 5px;
+	.resource-blocks .resource-block-content {
+
 	}
 	.additional-resources h4
 	{
@@ -2544,6 +2649,9 @@ a.less_btn
 		position: absolute;
 		width:250px;
 	}
+	.footer-second-column {
+		margin-left:0;
+	}
 }
 
 	/* iPhone 5/Samsung Galaxy 4 (Portrait) */
@@ -2559,9 +2667,65 @@ a.less_btn
 		padding: 0;
 		width: 100%;
 	}
+	.col-phone-12 {
+		float:left;
+		width:100%;
+	}
+	.tasks.col-phone-12, .inspire-giving.col-phone-12 {
+		margin-left:1%;
+		width:97%;
+	}
 	.salutation
 	{
 		display: none;
+	}
+	.mid-content-wrapper {
+		padding:40px 10px;
+	}
+	.navbar-header .mobileNav {
+		display:none;
+	}
+	.phone-navigation {
+		clear:both;
+		border-top:1px solid #363432;
+		padding:0;
+		margin:0;
+		float:left;
+		width:100%;
+		display:block !important;
+	}
+	.phone-navigation .mobileNav {
+		background:url('../img/phone-hamburger.png') no-repeat;
+		height:25px;
+		width:21px;
+		display:block;
+		margin:0 auto;
+	}
+	.phone-navigation li {
+		float:left;
+		list-style:none;
+		padding:20px;
+		border-right:1px solid #363432;
+		height:66px;
+	}
+	.phone-navigation .learner-portrait {
+		margin-top:-8px;
+	}
+	.phone-navigation .email-icon {
+		margin-top:-13px;
+	}
+	.search-this
+	{
+		background: url('../img/search-icon-small-new-trans.png') no-repeat;
+		cursor: pointer;
+		display:block;
+		height: 25px;
+		width: 26px;
+		margin:0 auto;
+	}
+	.search-this.close-this
+	{
+		background: url('../img/search-icon-close-new.png') no-repeat;
 	}
 	.search-panel form
 	{
@@ -2585,9 +2749,9 @@ a.less_btn
 		margin-top: 10px;
 		width: 45%;
 	}
-	.learner-profile-top .email-icon
+	.learner-profile-top 
 	{
-		padding: 10px 0px 0px 25px;
+		display:none;
 	}
 	.learner-profile-top.col-xs-8
 	{
@@ -2610,7 +2774,7 @@ a.less_btn
 	}
 	.course-info.white-bg
 	{
-		padding: 0px 5px 0px 5px;
+		margin-bottom:0;
 	}
 	.news-announcements
 	{
@@ -2636,10 +2800,6 @@ a.less_btn
 	.course-info .course-detail.first-box.one-line, .course-info .course-detail.first-box.two-line
 	{
 		min-height: initial !important;
-	}
-	.salutation
-	{
-		display: none;
 	}
 	.search-panel form
 	{
@@ -2697,4 +2857,22 @@ a.less_btn
 	{
 		margin-top: 34px;
 	}
+	.additional-resources .footer-second-column {
+		margin:0;
+	}
+	.back-to-top {
+		float:none;
+		margin:0 auto;
+		width:77px;
+		cursor:pointer;
+	}
+	.footer-second-column {
+		margin-left:0;
+	}
+}
+
+/* Extra Classes for Width to Make Things Fit */
+
+.col-sm-3.extra, .col-md-3.extra, .col-lg-3.extra {
+	width:26%;
 }
