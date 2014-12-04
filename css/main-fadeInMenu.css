@@ -68,6 +68,9 @@ h1,h2,h3,h4
 {
 	font-weight: bold;
 }
+.black {
+	color:#000;
+}
 .panel-group {
 	margin-bottom:0;
 }
@@ -397,16 +400,20 @@ img.phone-sm-logo
 }
 .learner-profile-dropdown
 {
-	background: #1a1712;
-	border-top: 1px solid #4e4c4a;
+	background: #fff;
 	display: none;
 	left: 50%;
-	margin-left: -54px;
-	margin-top: 75px;
+	margin-left: 104px;
+	margin-top: 67px;
 	max-width: 250px;
-	padding: 20px;
 	position: absolute;
 	z-index: 10000;
+	border:1px solid #e2e2e2;
+	border-top:0;
+	padding:0;
+	-moz-box-shadow:    2px 2px 4px 0px #ccc;
+  	-webkit-box-shadow: 2px 2px 4px 0px #ccc;
+  	box-shadow:         2px 2px 4px 0px #ccc;
 }
 .learner-profile-dropdown .learner-profile.user-details
 {
@@ -415,6 +422,12 @@ img.phone-sm-logo
 	font-size: 14px;
 	padding: 0px 0px 0px 0px;
 }
+
+.learner-profile-dropdown .learner-profile.user-details .name {
+	background:#f4f4f4;
+	font-size:12px;
+}
+
 .learner-profile-dropdown .learner-profile.user-details .light-grey
 {
 	background: #b6b7bf;
@@ -428,23 +441,20 @@ img.phone-sm-logo
 }
 .learner-profile-dropdown .learner-profile.user-details p
 {
-	line-height: 16px;
+	line-height: 20px;
 	margin: 0;
+	color:#989898;
 }
 .learner-profile-dropdown .learner-profile.social-profile
 {
 	background: none;
 	margin: 0;
-	padding: 0;
-}
-.learner-profile-dropdown .learner-profile.social-profile a
-{
-	color: #fff;
+	padding: 0px 15px;
 }
 .learner-profile-dropdown .learner-profile.social-profile ul
 {
 	margin: 0;
-	padding: 18px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
 }
 .learner-profile-dropdown .learner-profile.social-profile ul li
 {
@@ -455,35 +465,36 @@ img.phone-sm-logo
 }
 .learner-profile-dropdown .learner-profile.social-profile ul li a
 {
-	border-bottom: 1px solid #44403f;
+	border-bottom: 1px solid #ebebeb;
 	display: block;
-	font-size: 14px;
-	margin: 0px 0px 8px 0px;
-	padding: 0px 0px 8px 53px;
+	font-size: 12px;
+	margin: 0px 0px 4px 0px;
+	padding: 0px 0px 4px 10px;
+	color:#333;
+	text-transform: uppercase;
+	overflow:hidden;
 }
-.learner-profile-dropdown .learner-profile.social-profile ul li a.wall
-{
-	background: url('../img/social-icon-wall.png') no-repeat;
+
+.learner-profile-dropdown .learner-profile.user-details.purpose {
+	padding:0px 15px;
+	margin-bottom:10px;
 }
-.learner-profile-dropdown .learner-profile.social-profile ul li a.friends
-{
-	background: url('../img/social-icon-friends.png') no-repeat;
+
+.learner-profile-dropdown .learner-profile.social-profile .logout {
+	padding-top:2px;
 }
-.learner-profile-dropdown .learner-profile.social-profile ul li a.friends-requests
-{
-	background: url('../img/social-icon-friends-requests.png') no-repeat;
+
+.learner-profile-dropdown .learner-profile.social-profile .logoutText {
+	margin:-4px 0px 0px 5px;
 }
-.learner-profile-dropdown .learner-profile.social-profile ul li a.classmates
-{
-	background: url('../img/social-icon-classmates.png') no-repeat;
+.learner-profile-dropdown .learner-profile.social-profile .request-icon {
+	position:absolute;
+	right:0;
+	top:3px;
 }
-.learner-profile-dropdown .learner-profile.social-profile ul li a.edit-profile
-{
-	background: url('../img/social-icon-edit-profile.png') no-repeat;
-}
-.learner-profile-dropdown .learner-profile.social-profile ul li a.logout
-{
-	background: url('../img/social-icon-logout.png') no-repeat;
+.learner-profile-dropdown .learner-profile .learnerID {
+	display:block;
+	margin-top:-7px;
 }
 .see-all-news
 {
@@ -1306,9 +1317,9 @@ span.badge
 }
 .learner-top-arrow
 {
-	left: 50%;
+	left: 44%;
 	position: absolute;
-	top: -13px;
+	top: -12px;
 }
 .friend-req
 {
@@ -2201,10 +2212,12 @@ a.less_btn
 		float: none;
 		margin-left: 53px;
 	}
+	.learner-profile-dropdown .learner-profile.user-details .name {
+		background:#262524;
+	}
 	.learner-profile-dropdown
 	{
 		border: 0;
-		border-top: 6px solid #800d1c;
 		left: 0;
 		margin-left: 0px;
 		margin-top: 0px;
@@ -2212,6 +2225,20 @@ a.less_btn
 		position: initial;
 		right: 0;
 		width: 100%;
+		background:#262524;
+		box-shadow:none !important;
+	}
+	.learner-profile-dropdown .learner-profile.social-profile ul {
+		border-top:1px solid #3b3938;
+	}
+	.learner-profile-dropdown .learner-profile.social-profile ul li a {
+		color:#fff;
+		border-bottom:1px solid #3b3938;
+		letter-spacing: 0.7px;
+		padding:0px 0px 8px 10px;
+	}
+	.learner-profile .social-profile .col-sm-12 {
+		padding:0px 35px;
 	}
 	.entire-panel-wrapper
 	{
