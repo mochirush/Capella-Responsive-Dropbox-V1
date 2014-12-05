@@ -76,7 +76,7 @@ h1,h2,h3,h4
 }
 .search.dark-grey
 {
-	background: #1a1712;
+	background: #262524;
 }
 .search.dark-grey .search-panel .btn.btn-default
 {
@@ -90,8 +90,8 @@ h1,h2,h3,h4
 {
 	float: left;
 	height: 40px;
-	margin: 20px 0 20px 16%;
-	width: 82%;
+	margin: 20px 0 20px 7.5%;
+	width: 87%;
 }
 .search-panel .search-glass-icon
 {
@@ -109,11 +109,11 @@ h1,h2,h3,h4
 	box-shadow: none;
 	float: left;
 	height: 40px;
-	width: 58%;
+	width: 77%;
 }
 .search-panel button
 {
-	background: #005a8c;
+	background: #3da1d2;
 	color: #fff;
 	float: left;
 	font-family: 'Avenir LT W01 55 Roman', Verdana, Arial, sans-serif;
@@ -122,6 +122,8 @@ h1,h2,h3,h4
 	padding: 0 30px;
 	text-transform: uppercase;
 	width: 16%;
+	font-size:14px;
+	letter-spacing:1px;
 }
 .search-panel button:hover
 {
@@ -367,6 +369,7 @@ img.phone-sm-logo
 {
 	float: left;
 	margin-top: -5px;
+	margin-left:5px;
 }
 .learner-profile-top .salutation .user-profile-arrow
 {
@@ -646,11 +649,9 @@ img.phone-sm-logo
 }
 .mobile-navigation
 {
-	background: #000;
+	background: #262524;
 	border-bottom: 6px solid #800d1c;
-	border-top: 6px solid #800d1c;
 	float: left;
-	padding-left: 30px;
 	width: 100%;
 }
 .mobile-navigation ul
@@ -658,18 +659,29 @@ img.phone-sm-logo
 	margin: 0;
 	padding: 0;
 }
+.mobile-navigation ul li.first-column.first-item {
+	padding-top:7px;
+}
+.mobile-navigation ul li.first-column {
+	padding-left:115px;
+}
+.mobile-navigation ul li.second-column {
+	padding-left:95px;
+}
 .mobile-navigation ul li
 {
-	display: inline;
-	float: left;
+	display: block;
 	list-style: none;
-	padding: 15px 0px 20px 0px;
+	padding: 5px 0px 10px 0px;
+	border-bottom:1px solid #131211;
 }
 .mobile-navigation ul li a
 {
+	font-family:Avenir;
 	color: #fff;
-	font-size: 14px;
+	font-size: 13px;
 	text-transform: uppercase;
+	letter-spacing:0.7px;
 }
 .mobile-navigation .home-icon
 {
@@ -688,7 +700,7 @@ img.phone-sm-logo
 }
 .mobileNav.close-mobile
 {
-	background: url('../img/search-icon-new-close.png') no-repeat;
+	background: url('../img/hamburger-icon-close-new.png') no-repeat;
 }
 .exclaimation-mark
 {
@@ -1953,7 +1965,7 @@ a.less_btn
 	}
 	.search.dark-grey
 	{
-		border-top: 6px solid #800d1c;
+		background:#262524;
 		padding: 0;
 	}
 	.search-panel
@@ -2158,9 +2170,17 @@ a.less_btn
 		margin-right: -19px;
 		padding-right:0;
 	}
+	.learner-profile-top .search-this.close-this {
+		background:url('../img/search-mobile-close.png');
+		width:55px;
+		height:60px;
+		position: absolute;
+		top: 6px;
+		right: 41px;
+	}
 	.search.dark-grey
 	{
-		border-top: 6px solid #800d1c;
+		background:#262524;
 		padding: 0;
 	}
 	.search-panel
@@ -2212,8 +2232,23 @@ a.less_btn
 		float: none;
 		margin-left: 53px;
 	}
+	.mobileTab {
+		float:left;
+	}
+	.mobileTab.open {
+		
+	}
 	.learner-profile-dropdown .learner-profile.user-details .name {
 		background:#262524;
+		color:#fff;
+		font-family:Arial;
+		font-size:14px;
+		padding-top:5px;
+		border-top:1px solid #3b3938;
+	}
+	.learner-profile-dropdown .learner-profile.user-details .name .learnerID {
+		color:#c5c4c1;
+		font-size:12px;
 	}
 	.learner-profile-dropdown
 	{
@@ -2230,15 +2265,23 @@ a.less_btn
 	}
 	.learner-profile-dropdown .learner-profile.social-profile ul {
 		border-top:1px solid #3b3938;
+		padding:0;
 	}
 	.learner-profile-dropdown .learner-profile.social-profile ul li a {
 		color:#fff;
 		border-bottom:1px solid #3b3938;
 		letter-spacing: 0.7px;
-		padding:0px 0px 8px 10px;
+		padding:8px 0px 8px 10px;
 	}
 	.learner-profile .social-profile .col-sm-12 {
 		padding:0px 35px;
+	}
+	.learner-profile-dropdown .learner-profile.social-profile .logout {
+		padding-top:12px;
+	}
+	.learner-profile-dropdown .learner-profile.social-profile .request-icon {
+		right:26px;
+		top:11px;
 	}
 	.entire-panel-wrapper
 	{
@@ -2326,6 +2369,9 @@ a.less_btn
 	{
 		margin-right: -19px;
 	}
+	.mobile-navigation .mobile-hide {
+		display:none;
+	}
 
 }
 
@@ -2406,6 +2452,12 @@ a.less_btn
 	.phone-navigation .email-icon {
 		margin-top:-13px;
 	}
+	.phone-navigation .mobileBkg {
+		background:#262524;
+	}
+	.mobile-navigation ul li.first-column, .mobile-navigation ul li.second-column {
+		padding-left:68px;
+	}
 	.search-this
 	{
 		background: url('../img/search-icon-small-new-trans.png') no-repeat;
@@ -2415,14 +2467,22 @@ a.less_btn
 		width: 26px;
 		margin:0 auto;
 	}
-	.search-this.close-this
+	.search-this.close-this, .phone-navigation .mobileNav.close-phone
 	{
-		background: url('../img/search-icon-close-new.png') no-repeat;
+		background: url('../img/search-phone-close.png') no-repeat;
+		position: absolute;
+		width:55px;
+		height:60px;
+		top: 6px;
+		right: 52px;
 	}
 	.capella-logo-phone {
 		width:270px;
 		margin: 0 auto;
 		display:block;
+	}
+	.mobile-navigation .tablet-hide {
+		display:none;
 	}
 	.navigation
 	{
@@ -2458,7 +2518,7 @@ a.less_btn
 	}
 	.search.dark-grey
 	{
-		border-top: 6px solid #800d1c;
+		background:#262524;
 		padding: 0;
 	}
 	.search-panel
@@ -2482,10 +2542,8 @@ a.less_btn
 	}
 	.search-panel button
 	{
-		float: none;
-		margin: 0 auto;
-		margin-top: 10px;
-		width: 45%;
+		margin-top: 20px;
+		width: 96%;
 	}
 	.course-info .assignments {
 		padding-left:0;
@@ -2555,13 +2613,42 @@ a.less_btn
 	.learner-profile-dropdown
 	{
 		border: 0;
-		border-top: 6px solid #800d1c;
 		left: 0;
 		margin: 0;
 		max-width: 100%;
 		position: initial;
 		right: 0;
 		width: 100%;
+	}
+	.learner-profile-dropdown .learner-profile.social-profile {
+		background:#262524;
+		padding:0;
+	}
+	.learner-profile-dropdown .learner-profile.social-profile ul {
+		border-bottom: 6px solid #800d1c;
+	}
+	.learner-profile-dropdown .learner-profile.social-profile ul li {
+		float:none;
+		display:block;
+		width:100%;
+	}
+	.learner-profile-dropdown .learner-profile.social-profile ul li a {
+		color:#fff;
+		border-top:1px solid #333130;
+		border-bottom:0;
+		padding:8px 0px 4px 68px;
+		margin:0;
+	}
+	.learner-profile-dropdown .learner-profile.user-details .name {
+		background:#262524;
+	}
+	.learner-profile-dropdown .learner-profile.social-profile .request-icon {
+		position: absolute;
+		right: 15px;
+		top: 11px;
+	}
+	.learner-profile-dropdown .learner-profile.social-profile .logout {
+		padding-top:10px;
 	}
 	.entire-panel-wrapper
 	{
@@ -2741,6 +2828,13 @@ a.less_btn
 	.phone-navigation .email-icon {
 		margin-top:-13px;
 	}
+	.mobile-navigation ul li.first-column, .mobile-navigation ul li.second-column {
+		padding-left:34px;
+	}
+
+	.search-this.close-this, .phone-navigation .mobileNav.close-phone {
+		right:17px;
+	}
 	.search-this
 	{
 		background: url('../img/search-icon-small-new-trans.png') no-repeat;
@@ -2753,6 +2847,15 @@ a.less_btn
 	.search-this.close-this
 	{
 		background: url('../img/search-icon-close-new.png') no-repeat;
+
+	}
+	.phone-navigation .close-this {
+		background: url('../img/search-phone-close.png') no-repeat;
+		position: absolute;
+		width: 55px;
+		height: 60px;
+		top: 6px;
+		right: 18px;
 	}
 	.search-panel form
 	{
@@ -2773,7 +2876,7 @@ a.less_btn
 	{
 		float: none;
 		margin: 0 auto;
-		margin-top: 10px;
+		margin-top: 20px;
 		width: 45%;
 	}
 	.learner-profile-top 
@@ -2828,13 +2931,6 @@ a.less_btn
 	{
 		min-height: initial !important;
 	}
-	.search-panel form
-	{
-		height: initial;
-		margin-left: 2%;
-		margin-right: 2%;
-		width: 96%;
-	}
 	.search-panel .search-glass-icon
 	{
 		width: 11%;
@@ -2845,10 +2941,9 @@ a.less_btn
 	}
 	.search-panel button
 	{
-		float: none;
-		margin: 0 auto;
-		margin-top: 10px;
-		width: 45%;
+		float:left;
+		margin:20px 0px 0px 0px;
+		width: 96%;
 	}
 	.learner-profile-dropdown
 	{
@@ -2862,6 +2957,9 @@ a.less_btn
 		right: 0;
 		top: 0;
 		width: 100%;
+	}
+	.learner-profile-dropdown .learner-profile.social-profile ul li a {
+		padding-left:34px;
 	}
 	.faculty-info
 	{

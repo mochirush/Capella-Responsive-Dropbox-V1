@@ -19,11 +19,19 @@ $(document).ready(function(){
 		$('#bs-example-navbar-collapse-1.in').collapse('hide');
 	});
 
-	// Mobile Navigation
+	// Tablet Navigation
 
 	$('.mobilenavbar .mobileNav').click(function(){
 		$('.mobile-navigation').slideToggle();
-		//$(this).toggleClass('close-mobile');
+		$(this).toggleClass('close-mobile');
+	});
+
+	// Phone Navigation
+
+	$('.phone-navigation .mobileNav').click(function(){
+		$('.mobile-navigation').slideToggle();
+		$(this).toggleClass('close-phone');
+		$('.phone-navigation li').first().toggleClass('mobileBkg');
 	});
 
 	// Prevent Touch click on mobile devices 
@@ -37,7 +45,7 @@ $(document).ready(function(){
 	var iPhonePortrait = window.matchMedia( "(max-width: 320px)" );
 	var iPhoneLandscape = window.matchMedia( "(max-width: 568px)" );
 	var iPadPortrait = window.matchMedia( "(max-width: 768px)" );
-	
+
 	if(iPhonePortrait.matches){
 		$('.learner-profile-top .salutation, .learner-profile-top .learner-portrait').click(function(){
 			$('.learner-profile-dropdown').slideToggle();
@@ -55,12 +63,28 @@ $(document).ready(function(){
 			$('.learner-profile-top .salutation .user-profile-arrow').toggleClass('up');
 			console.log('iPhone - Landscape - slideToggle');
 			return false;
-		})
+		});
+		// Phone
+		$('.learner-profile-mobile').click(function(){
+			$('.learner-profile-dropdown').slideToggle();
+			$(this).toggleClass('mobileBkg');
+			$('.learner-profile.social-profile li a.logout img').attr('src', 'img/logout-icon-mobile-new.png');
+			return false;
+		});
 		// Email Icon Link
 		$('.email-icon').click(function(){
 			window.location.href = 'http://media.capella.edu/NonCourseMedia/iGuide-responsive/_devCA/learnermail.html';
 		});	
 	} else if(iPadPortrait.matches){
+		// Tablet
+		$('.learner-profile-mobile').click(function(){
+			$('.learner-profile-dropdown').slideToggle();
+			$(this).toggleClass('mobileBkg');
+			$('.learner-profile.social-profile li a.logout img').attr('src', 'img/logout-icon-mobile-new.png');
+			console.log('iPad - Portrait - slideToggle');
+			return false;
+		})
+		// Phone
 		$('.learner-profile-top .salutation, .learner-profile-top .learner-portrait').click(function(){
 			$('.learner-profile-dropdown').slideToggle();
 			$('.learner-profile-top .salutation .user-profile-arrow').toggleClass('up');
@@ -92,6 +116,7 @@ $(document).ready(function(){
 	$('.search-this').click(function(){
 		$('#search-panel.search-panel').slideToggle();
 		$(this).toggleClass('close-this');
+		$('.phone-navigation li').last().toggleClass('mobileBkg');
 	});
 
 	// Upcoming Courses

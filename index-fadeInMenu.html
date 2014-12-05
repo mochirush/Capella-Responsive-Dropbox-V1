@@ -78,7 +78,7 @@
                      </div>
                      <ul class="phone-navigation hide text-center">
                            <li class="col-xs-3"><span class="mobileNav"></span></li>
-                           <li class="col-xs-3"><img src="img/learner-portrait-with-notification-new2.jpg" alt="" class="learner-portrait"/></li>
+                           <li class="col-xs-3 learner-profile-mobile"><img src="img/learner-portrait-with-notification-new2.jpg" alt="" class="learner-portrait"/></li>
                            <li class="col-xs-3"><img src="img/email-with-notification-new.png" alt="" class="email-icon"/></li>
                            <li class="col-xs-3"><span class="search-this closex"></span></li>
                      </ul>
@@ -86,9 +86,10 @@
                      <!-- Start of right hand header -->
                      <!-- Start of Learner Profile --> 
                      <div class="learner-profile-top col-sm-5 col-md-4 col-lg-4">
-                        
-                        <img src="img/learner-portrait-with-notification-new2.jpg" alt="" class="learner-portrait"/>
-                        <span class="salutation"><span class="name">Hi Beverly</span> <span class="user-profile-arrow"></span></span>
+                        <div class="mobileTab">
+                           <img src="img/learner-portrait-with-notification-new2.jpg" alt="" class="learner-portrait"/>
+                           <span class="salutation"><span class="name">Hi Beverly</span> <span class="user-profile-arrow"></span></span>
+                        </div>
                         <img src="img/email-with-notification-new.png" alt="" class="email-icon"/>
                         <span class="search-this closex"></span>
                      </div>
@@ -111,7 +112,7 @@
                            </div>
                            <!-- Mobile -->
                            <div class="no-padding name visible-sm text-center">
-                              <span class="black">Beverly Doe</span>
+                              Beverly Doe
                               <span class="learnerID">Learner ID: 1007328</span>
                            </div>
                            <div class="learner-profile social-profile visible-sm">
@@ -120,8 +121,8 @@
                                  <li class="col-xs-6 col-sm-6 col-md-12 col-lg-12"><a href="#" class="friends-requests">Friend Request(s)</a><img src="img/request-icon-new.png" alt="" class="request-icon"/></li>
                                  <li class="col-xs-6 col-sm-6 col-md-12 col-lg-12"><a href="#" class="classmates">Classmates</a></li>
                                  <li class="col-xs-6 col-sm-6 col-md-12 col-lg-12"><a href="#" class="edit-profile">Edit Profile</a></li>
-                                 <li class="col-xs-6 col-sm-6 col-md-12 col-lg-12"><a href="#" class="friends">Friends</a></li>
-                                 <li class="col-xs-6 col-sm-6 col-md-12 col-lg-12"><a href="#" class="logout"><img src="img/logout-icon-mobile-new.png" alt="" class="left"/><span class="logoutText left">Log Out</span></a></li>
+                                 <li class="col-xs-6 col-sm-6 col-md-12 col-lg-12"><a href="#" class="friends no-border">Friends</a></li>
+                                 <li class="col-xs-6 col-sm-6 col-md-12 col-lg-12"><a href="#" class="logout no-border"><img src="img/logout-icon-mobile-new.png" alt="" class="left"/><span class="logoutText left">Log Out</span></a></li>
                               </ul>
                            </div>
                            <!-- end of mobile -->
@@ -137,14 +138,27 @@
                </div>
 
                <div class="mobile-navigation collapse">
-                  <ul>
-                     <li class="col-xs-6"><!--<a href="#"><img src="img/home-icon-new.png" alt="" class="home-icon"/>--><span class="mobileHome">Home</span></a></li>
-                     <li class="col-xs-12"><a href="#">My Capella</a></li>
-                     <li class="col-xs-12"><a href="#">The University</a></li>
-                     <li class="col-xs-12"><a href="#">Library</a></li>
-                     <li class="col-xs-12"><a href="#">Academic Skills</a></li>
-                     <li class="col-xs-12"><a href="#">Support Teams</a></li>
-                     <li class="col-xs-12"><a href="#">Community</a></li>
+                  <!-- Tablet -->
+                  <ul class="col-xs-6 tablet-hide">
+                     <li class="first-column first-item"><!--<a href="#"><img src="img/home-icon-new.png" alt="" class="home-icon"/>--><span class="mobileHome">Home</span></a></li>
+                     <li class="first-column"><a href="#">My Capella</a></li>
+                     <li class="first-column"><a href="#">The University</a></li>
+                     <li class="first-column"><a href="#">Library</a></li>
+                  </ul>
+                  <ul class="col-xs-6 tablet-hide">
+                     <li class="second-column"><a href="#">Academic Skills</a></li>  
+                     <li class="second-column"><a href="#">Support Teams</a></li>
+                     <li class="second-column"><a href="#">Community</a></li>
+                  </ul>
+                  <!-- Phone -->
+                  <ul class="col-xs-12 mobile-hide">
+                     <li class="first-column first-item"><!--<a href="#"><img src="img/home-icon-new.png" alt="" class="home-icon"/>--><span class="mobileHome">Home</span></a></li>
+                     <li class="first-column"><a href="#">My Capella</a></li>
+                     <li class="first-column"><a href="#">The University</a></li>
+                     <li class="first-column"><a href="#">Library</a></li>
+                     <li class="second-column"><a href="#">Academic Skills</a></li>  
+                     <li class="second-column"><a href="#">Support Teams</a></li>
+                     <li class="second-column"><a href="#">Community</a></li>
                   </ul>
                </div><!-- end of mobile-navigation-->
 
