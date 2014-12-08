@@ -134,9 +134,16 @@
 	{
 		background: #ebebeb;
 	}
+	.panel-inner-box .assignment-status {
+		font-size:12px;
+	}
+	.course-info .assignments li .assignment-date {
+		font-size:12px;
+	}
 	.panel-inner-box ul li
 	{
 		padding-top: 12px;
+		font-size:12px;
 	}
 	.tasks-giving-wrapper
 	{
@@ -253,6 +260,7 @@
 		width:21px;
 		display:block;
 		margin:0 auto;
+		cursor:pointer;
 	}
 	.phone-navigation li {
 		float:left;
@@ -263,9 +271,11 @@
 	}
 	.phone-navigation .learner-portrait {
 		margin-top:-8px;
+		cursor: pointer;
 	}
 	.phone-navigation .email-icon {
 		margin-top:-13px;
+		cursor:pointer;
 	}
 	.phone-navigation .mobileBkg {
 		background:#262524;
@@ -497,10 +507,6 @@
 	{
 		background: #fff;
 		padding-top:8px;
-	}
-	.panel-inner-box ul li
-	{
-		padding-top: 12px;
 	}
 	.last-panels
 	{
@@ -735,10 +741,6 @@
 	.back-to-top.col-xs-3
 	{
 		width: 40%;
-	}
-	.panel-inner-box ul li
-	{
-		font-size: 14px;
 	}
 	.course-info .course-detail.first-box.one-line, .course-info .course-detail.first-box.two-line
 	{
