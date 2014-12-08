@@ -2,8 +2,8 @@ $(document).ready(function(){
 	
 	/* Alert Window Width */
 
-	/*var width = $(window).width();
-	alert(width)*/
+	var width = $(window).width();
+	console.log(width)
 
 	/* Primary Navigation */
 
@@ -118,6 +118,32 @@ $(document).ready(function(){
 		$(this).toggleClass('close-this');
 		$('.phone-navigation li').last().toggleClass('mobileBkg');
 	});
+
+	// Slides
+
+	$('#slides').slidesjs({
+        width: 992,
+        height: 350,
+        navigation: {
+          effect: "fade"
+        },
+        pagination: {
+          effect: "fade"
+        },
+        effect: {
+          fade: {
+            speed: 800
+          }
+        }
+      });
+	
+	// Wrap Pager in Custom Class
+
+	$('.slidesjs-pagination').wrap('<div class="carousel-buttons"/>');
+
+	// Add See All News Text In
+
+	$('<span class="see_all_news">All news</span>').appendTo('.carousel-buttons')
 
 	// Upcoming Courses
 
