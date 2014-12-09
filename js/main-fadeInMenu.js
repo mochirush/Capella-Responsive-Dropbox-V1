@@ -47,9 +47,10 @@ $(document).ready(function(){
 	var iPadPortrait = window.matchMedia( "(max-width: 768px)" );
 
 	if(iPhonePortrait.matches){
-		$('.learner-profile-top .salutation, .learner-profile-top .learner-portrait').click(function(){
+		$('.phone-navigation .learner-portrait').click(function(){
 			$('.learner-profile-dropdown').slideToggle();
-			$('.learner-profile-top .salutation .user-profile-arrow').toggleClass('up');
+			//$('.learner-profile-top .salutation .user-profile-arrow').toggleClass('up');
+			$('.learner-profile.social-profile li a.logout img').attr('src', 'img/logout-icon-mobile-new.png');
 			console.log('iPhone - Portrait - slideToggle');
 			return false;
 		})
@@ -58,9 +59,10 @@ $(document).ready(function(){
 			window.location.href = 'http://media.capella.edu/NonCourseMedia/iGuide-responsive/_devCA/learnermail.html';
 		});	
 	} else if(iPhoneLandscape.matches){
-		$('.learner-profile-top .salutation, .learner-profile-top .learner-portrait').click(function(){
+		$('.phone-navigation .learner-portrait').click(function(){
 			$('.learner-profile-dropdown').slideToggle();
-			$('.learner-profile-top .salutation .user-profile-arrow').toggleClass('up');
+			//$('.learner-profile-top .salutation .user-profile-arrow').toggleClass('up');
+			$('.learner-profile.social-profile li a.logout img').attr('src', 'img/logout-icon-mobile-new.png');
 			console.log('iPhone - Landscape - slideToggle');
 			return false;
 		});
